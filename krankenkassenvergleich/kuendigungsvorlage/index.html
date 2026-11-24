@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="de-CH"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Kündigungsvorlage Grundversicherung | SOLVENTA</title>
+<meta name="robots" content="noindex,follow">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<style>
+@font-face{font-family:Inter;src:url('/assets/fonts/inter-latin-400-normal.woff2') format('woff2');font-weight:400;font-display:swap}
+@font-face{font-family:Inter;src:url('/assets/fonts/inter-latin-600-normal.woff2') format('woff2');font-weight:600;font-display:swap}
+body{margin:0;background:#F5F6F8;color:#1B2A3D;font-family:Inter,Arial,sans-serif;font-size:15px;line-height:23px}
+.wrap{max-width:820px;margin:0 auto;padding:24px 16px 60px}
+.bar{display:flex;gap:10px;flex-wrap:wrap;align-items:center;justify-content:space-between;margin-bottom:16px}
+.bar a{color:#1B2A3D}
+button{background:#AF9B64;border:0;border-radius:10px;padding:12px 20px;font:inherit;font-weight:600;color:#1B2A3D;cursor:pointer}
+.hint{background:#fff;border:1px solid #DDE1E7;border-radius:14px;padding:16px 20px;margin-bottom:16px}
+.hint h1{font-size:20px;line-height:26px;margin:0 0 8px}
+.hint ul{margin:0;padding-left:20px}
+.letter{background:#fff;border:1px solid #DDE1E7;border-radius:4px;padding:56px 64px;min-height:900px}
+[contenteditable]{background:#FFF8E1;border-radius:3px;padding:0 3px;outline:none}
+[contenteditable]:focus{background:#FFEFB3}
+.r{text-align:right}
+p{margin:0 0 14px}
+@media(max-width:600px){.letter{padding:28px 20px}}
+@media print{body{background:#fff}.bar,.hint{display:none}.wrap{padding:0;max-width:none}.letter{border:0;padding:0}[contenteditable]{background:none;padding:0}}
+</style><script src="/assets/sv-zeit.js"></script>
+</head><body><div class="wrap">
+<div class="bar"><a href="https://krankenkasse.solventa.ch/">&larr; Zurück zum Krankenkassen-Vergleich</a><button type="button" onclick="window.print()">Drucken oder als PDF speichern</button></div>
+<div class="hint"><h1>Kündigungsvorlage Grundversicherung</h1><ul>
+<li>Gelbe Felder anklicken und ausfüllen, dann drucken und unterschreiben.</li>
+<li>Per Einschreiben senden. Die Kündigung muss bis 30. November bei der Kasse eintreffen, wenn Sie nach der Prämienmitteilung auf Ende Jahr wechseln.</li>
+<li>Die Grundversicherung endet erst, wenn die neue Kasse Ihrer bisherigen Kasse die Aufnahme bestätigt hat.</li>
+<li>Zusatzversicherungen haben eigene Fristen und eine Gesundheitsprüfung. Kündigen Sie sie erst, wenn die neue Zusatzversicherung schriftlich bestätigt ist.</li>
+</ul></div>
+<div class="letter">
+<p><span contenteditable>Vorname Nachname</span><br><span contenteditable>Strasse Nr.</span><br><span contenteditable>PLZ Ort</span></p>
+<p style="margin-top:28px">Einschreiben<br><span contenteditable>Name der Krankenkasse</span><br><span contenteditable>Adresse der Krankenkasse</span><br><span contenteditable>PLZ Ort</span></p>
+<p class="r" style="margin-top:28px"><span contenteditable>Ort</span>, <span contenteditable id="dt">Datum</span></p>
+<p style="margin-top:28px"><strong>Kündigung der obligatorischen Krankenpflegeversicherung (Grundversicherung) per 31. Dezember <span id="yr">2026</span></strong></p>
+<p>Sehr geehrte Damen und Herren</p>
+<p>Hiermit kündige ich die obligatorische Krankenpflegeversicherung nach KVG fristgerecht auf den 31. Dezember <span class="yr2">2026</span> für folgende Personen:</p>
+<p><span contenteditable>Name, Vorname, Geburtsdatum, Versichertennummer</span><br><span contenteditable>(weitere Person, falls nötig)</span></p>
+<p>Diese Kündigung betrifft nur die Grundversicherung. Allfällige Zusatzversicherungen bleiben bestehen.</p>
+<p>Ab 1. Januar <span class="yr3">2027</span> bin ich bei einem anderen Versicherer versichert. Die Aufnahmebestätigung stellt Ihnen der neue Versicherer zu.</p>
+<p>Bitte bestätigen Sie mir den Eingang dieser Kündigung schriftlich.</p>
+<p>Freundliche Grüsse</p>
+<p style="margin-top:56px">Unterschrift: ______________________________<br><span style="font-size:13px">(bei mehreren Personen: alle volljährigen Personen unterschreiben)</span></p>
+</div></div>
+<script>(function(){var n=new Date(),y=n.getMonth()===11?n.getFullYear()+1:n.getFullYear();document.getElementById('yr').textContent=y;document.querySelector('.yr2').textContent=y;document.querySelector('.yr3').textContent=y+1;
+document.getElementById('dt').textContent=n.toLocaleDateString('de-CH');})();</script>
+</body></html>
