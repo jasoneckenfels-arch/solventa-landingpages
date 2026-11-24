@@ -6,3 +6,5 @@ Statische Seiten (HTML, CSS und JS jeweils in der Datei). Jede Aenderung auf dem
 - Host-Regeln in _redirects nicht aendern
 - Jahreswerte zentral in assets/sv-zeit.js
 - Formulare: Netlify Forms
+
+Ablauf Aenderung: Datei bearbeiten, Commit auf main, Netlify veroeffentlicht automatisch (rund 1 Minute).
