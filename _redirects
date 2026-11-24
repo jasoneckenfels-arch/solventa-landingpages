@@ -1,0 +1,31 @@
+# Subdomains von solventa.ch: jede Subdomain zeigt ihre Seite
+https://beratung.solventa.ch/  /kostenlose-erstberatung/  200!
+https://beratung.solventa.ch/*  /kostenlose-erstberatung/:splat  200
+https://hypotheken.solventa.ch/  /hypotheken-vergleich/  200!
+https://hypotheken.solventa.ch/*  /hypotheken-vergleich/:splat  200
+https://krankenkasse.solventa.ch/  /krankenkassenvergleich/  200!
+https://krankenkasse.solventa.ch/*  /krankenkassenvergleich/:splat  200
+https://saeule3a.solventa.ch/  /renditevergleich-3a/  200!
+https://saeule3a.solventa.ch/*  /renditevergleich-3a/:splat  200
+https://steuern.solventa.ch/  /steueroptimierung-check/  200!
+https://steuern.solventa.ch/*  /steueroptimierung-check/:splat  200
+https://freizuegigkeit.solventa.ch/  /freizuegigkeit-check/  200!
+https://freizuegigkeit.solventa.ch/*  /freizuegigkeit-check/:splat  200
+https://nachlass.solventa.ch/  /nachlass-vorsorge/  200!
+https://nachlass.solventa.ch/*  /nachlass-vorsorge/:splat  200
+https://finanzcheck.solventa.ch/  /finanzcheck/  200!
+https://finanzcheck.solventa.ch/*  /finanzcheck/:splat  200
+https://rechner.solventa.ch/  /rechner/  200!
+https://rechner.solventa.ch/*  /rechner/:splat  200
+
+# Alte Adressen auf die neuen Subdomains
+/kostenlose-erstberatung/*  https://beratung.solventa.ch/:splat  301!
+/hypotheken-vergleich/*  https://hypotheken.solventa.ch/:splat  301!
+/krankenkassenvergleich/*  https://krankenkasse.solventa.ch/:splat  301!
+/renditevergleich-3a/*  https://saeule3a.solventa.ch/:splat  301!
+/steueroptimierung-check/*  https://steuern.solventa.ch/:splat  301!
+/freizuegigkeit-check/*  https://freizuegigkeit.solventa.ch/:splat  301!
+/nachlass-vorsorge/*  https://nachlass.solventa.ch/:splat  301!
+/finanzcheck/*  https://finanzcheck.solventa.ch/:splat  301!
+/rechner/*  https://rechner.solventa.ch/:splat  301!
+/  https://www.solventa.ch/  301!

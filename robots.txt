@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://beratung.solventa.ch/sitemap.xml
