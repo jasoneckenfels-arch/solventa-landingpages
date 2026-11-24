@@ -1,0 +1,1407 @@
+<!DOCTYPE html>
+<html lang="de-CH">
+<head>
+<script>/* sv-consent-default */
+window.dataLayer = window.dataLayer || [];
+function gtag(){ dataLayer.push(arguments); }
+gtag('consent', 'default', {ad_storage:'denied', analytics_storage:'denied', ad_user_data:'denied', ad_personalization:'denied', functionality_storage:'granted', security_storage:'granted', wait_for_update:500});
+gtag('set', 'ads_data_redaction', true);
+(function(){ try{ var c = JSON.parse(localStorage.getItem('sv_consent') || decodeURIComponent((document.cookie.match(/(?:^|; )sv_consent=([^;]*)/) || [])[1] || '') || 'null'); if(c && c.v === 1){
+  gtag('consent', 'update', {analytics_storage: c.stat ? 'granted' : 'denied', ad_storage: c.mkt ? 'granted' : 'denied', ad_user_data: c.mkt ? 'granted' : 'denied', ad_personalization: c.mkt ? 'granted' : 'denied'});
+  dataLayer.push({event:'consent_ready', consent_statistik:!!c.stat, consent_marketing:!!c.mkt}); } }catch(e){} })();
+</script>
+<script src="/assets/sv-zeit.js"></script>
+<script>(function(){try{
+var K=['gclid','gbraid','wbraid','utm_source','utm_medium','utm_campaign','utm_content','utm_term'];
+var q=new URLSearchParams(location.search),s={},has=false;
+try{s=JSON.parse(sessionStorage.getItem('sv_track')||'{}')}catch(e){}
+K.forEach(function(k){var v=q.get(k);if(v){s[k]=v;has=true}});
+if(has){try{sessionStorage.setItem('sv_track',JSON.stringify(s))}catch(e){}}
+else{var add=false;K.forEach(function(k){if(s[k]&&!q.get(k)){q.set(k,s[k]);add=true}});
+if(add&&history.replaceState){history.replaceState(null,'',location.pathname+'?'+q.toString()+location.hash)}}
+}catch(e){}})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Starten oder Warten: Was kostet Aufschieben? | SOLVENTA</title>
+<meta name="description" content="Was kostet es, mit Sparen und Anlegen ein paar Jahre zu warten? Der Rechner zeigt die Differenz in Franken und wie viel Sie später mehr sparen müssten.">
+<link rel="canonical" href="https://rechner.solventa.ch/starten-oder-warten/">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta name="theme-color" content="#283C55">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Starten oder Warten: Was kostet Aufschieben? | SOLVENTA">
+<meta property="og:description" content="Was kostet es, mit Sparen und Anlegen ein paar Jahre zu warten? Der Rechner zeigt die Differenz in Franken und wie viel Sie später mehr sparen müssten.">
+<meta property="og:url" content="https://rechner.solventa.ch/starten-oder-warten/">
+<meta property="og:locale" content="de_CH">
+<meta property="og:site_name" content="SOLVENTA (Schweiz) AG">
+<meta property="og:image" content="https://rechner.solventa.ch/assets/og/rechner-starten-oder-warten.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preload" href="/assets/fonts/inter-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/inter-latin-700-italic.woff2" as="font" type="font/woff2" crossorigin>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"FinancialService","@id":"https://www.solventa.ch/#org","name":"SOLVENTA (Schweiz) AG","url":"https://www.solventa.ch/","telephone":"+41415117606","email":"info@solventa.ch","address":{"@type":"PostalAddress","streetAddress":"Gartenstrasse 2","postalCode":"6300","addressLocality":"Zug","addressCountry":"CH"},"areaServed":{"@type":"Country","name":"Schweiz"}},{"@type":"WebApplication","@id":"https://rechner.solventa.ch/starten-oder-warten/#tool","name":"Starten oder Warten","url":"https://rechner.solventa.ch/starten-oder-warten/","description":"Was kostet es, mit dem Sparen und Anlegen ein paar Jahre zu warten? Der Rechner zeigt den Unterschied in Franken und wie viel Sie später zusätzlich sparen müssten.","applicationCategory":"FinanceApplication","operatingSystem":"Alle Browser","browserRequirements":"JavaScript","inLanguage":"de-CH","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"CHF"},"provider":{"@id":"https://www.solventa.ch/#org"}},{"@type":"BreadcrumbList","@id":"https://rechner.solventa.ch/starten-oder-warten/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Start","item":"https://www.solventa.ch/"},{"@type":"ListItem","position":2,"name":"Rechner","item":"https://rechner.solventa.ch/"},{"@type":"ListItem","position":3,"name":"Starten oder Warten","item":"https://rechner.solventa.ch/starten-oder-warten/"}]}]}</script>
+
+<style>
+@font-face{font-family:'Inter';src:url('/assets/fonts/inter-latin-400-normal.woff2') format('woff2');font-weight:400;font-style:normal;font-display:swap;}
+@font-face{font-family:'Inter';src:url('/assets/fonts/inter-latin-500-normal.woff2') format('woff2');font-weight:500;font-style:normal;font-display:swap;}
+@font-face{font-family:'Inter';src:url('/assets/fonts/inter-latin-600-normal.woff2') format('woff2');font-weight:600;font-style:normal;font-display:swap;}
+@font-face{font-family:'Inter';src:url('/assets/fonts/inter-latin-700-normal.woff2') format('woff2');font-weight:700;font-style:normal;font-display:swap;}
+@font-face{font-family:'Inter';src:url('/assets/fonts/inter-latin-600-italic.woff2') format('woff2');font-weight:600;font-style:italic;font-display:swap;}
+@font-face{font-family:'Inter';src:url('/assets/fonts/inter-latin-700-italic.woff2') format('woff2');font-weight:700;font-style:italic;font-display:swap;}
+
+:root{
+  --navy:#283C55; --gold:#AF9B64; --gold-dark:#9C8A57; --gold-text:#7F6E3C; --red:#C75050; --green:#2E7D5B; --amber:#B8860B;
+  --bg:#F6F7F9; --card:#F6F7F9; --text:#283C55; --muted:#64676E; --label:#44474D; --axis:#6B7380;
+  --field:#E4E6EE; --field-line:#8E96A3; --line:#E6E3E8;
+  --shadow:rgba(0,0,0,.10) 6px 6px 60px 0px; --shadow-hover:rgba(0,0,0,.14) 8px 10px 60px 0px;
+  --s1:#283C55; --s2:#C75050; --s3:#AF9B64;
+}
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;}
+body{margin:0;font-family:'Inter',system-ui,-apple-system,'Segoe UI',Arial,sans-serif;font-size:16px;line-height:24px;color:var(--text);background:var(--bg);-webkit-font-smoothing:antialiased;}
+img,svg{max-width:100%;display:block;}
+a{color:inherit;}
+button{font-family:inherit;}
+.container{max-width:1240px;margin:0 auto;padding:0 24px;}
+@media(max-width:480px){.container{padding:0 16px;}}
+
+/* ---------- Kopfzeile ---------- */
+header.site{background:rgba(251,249,251,.92);backdrop-filter:saturate(1.4) blur(10px);-webkit-backdrop-filter:saturate(1.4) blur(10px);position:sticky;top:0;z-index:40;border-bottom:1px solid rgba(40,60,85,.06);}
+.header-inner{display:flex;align-items:center;justify-content:space-between;gap:16px;max-width:1240px;margin:0 auto;padding:0 24px;height:64px;}
+@media(min-width:760px){.header-inner{height:76px;}}
+@media(max-width:480px){.header-inner{padding:0 16px;}}
+.solventa-logo{height:22px;width:auto;}
+@media(min-width:760px){.solventa-logo{height:28px;}}
+.header-right{display:flex;align-items:center;gap:22px;}
+.phone-link{display:none;align-items:center;gap:8px;font-weight:600;font-size:15px;color:var(--text);text-decoration:none;white-space:nowrap;}
+.phone-link svg{width:16px;height:16px;}
+@media(min-width:600px){.phone-link{display:inline-flex;}}
+.phone-only{display:inline-flex;align-items:center;justify-content:center;width:40px;height:40px;border-radius:10px;border:1px solid var(--line);color:var(--text);}
+@media(min-width:600px){.phone-only{display:none;}}
+.tools-menu{position:relative;}
+.tools-menu summary{list-style:none;cursor:pointer;display:inline-flex;align-items:center;gap:8px;height:40px;padding:0 14px;border-radius:10px;font-size:15px;font-weight:700;color:var(--text);transition:background .2s;}
+.tools-menu summary::-webkit-details-marker{display:none;}
+.tools-menu summary{white-space:nowrap;}
+@media(max-width:420px){.hide-s{display:none;}.header-right{gap:10px;}}
+.tools-menu summary:hover{background:rgba(40,60,85,.06);}
+.tools-menu summary::after{content:"";width:7px;height:7px;border-right:2px solid var(--gold);border-bottom:2px solid var(--gold);transform:rotate(45deg) translateY(-2px);transition:transform .25s;}
+.tools-menu[open] summary::after{transform:rotate(-135deg) translateY(-1px);}
+.tools-panel{position:absolute;right:0;top:calc(100% + 10px);width:min(560px,92vw);background:#fff;border-radius:16px;box-shadow:0 24px 70px rgba(20,30,50,.18);padding:10px;display:grid;grid-template-columns:1fr 1fr;gap:2px;animation:menuin .22s cubic-bezier(.2,.8,.2,1);}
+@media(max-width:600px){.tools-panel{grid-template-columns:1fr;right:-60px;}}
+@keyframes menuin{from{opacity:0;transform:translateY(-6px) scale(.98);}to{opacity:1;transform:none;}}
+.tools-panel a{display:block;padding:12px 14px;border-radius:10px;text-decoration:none;transition:background .15s;}
+.tools-panel a:hover{background:#F4F2F5;}
+.tools-panel a b{display:block;font-size:15px;font-weight:600;color:var(--text);}
+.tools-panel a span{display:block;font-size:13px;line-height:18px;color:var(--muted);margin-top:2px;}
+.tools-panel a.current b{color:var(--gold-text);}
+
+/* ---------- Kopf des Rechners ---------- */
+.calc-shell{padding:48px 0 80px;}
+@media(max-width:760px){.calc-shell{padding:32px 0 56px;}}
+.calc-head{margin-bottom:34px;max-width:720px;}
+.calc-head .eyebrow{display:block;font-size:12px;line-height:18px;font-weight:600;letter-spacing:.18em;color:var(--gold-text);text-transform:uppercase;}
+.calc-head h1,.calc-head .result-title{font-size:36px;line-height:1.08;font-weight:700;font-style:italic;letter-spacing:-.02em;color:var(--text);margin:10px 0 14px;}
+@media(max-width:400px){.calc-head h1,.calc-head .result-title{font-size:31px;}}
+.calc-head h1{overflow-wrap:break-word;hyphens:auto;}
+@media(min-width:760px){.calc-head h1,.calc-head .result-title{font-size:46px;}}
+@media(min-width:1100px){.calc-head h1,.calc-head .result-title{font-size:52px;}}
+.calc-head h1 .dot,.calc-head .result-title .dot{color:var(--gold);font-style:normal;}
+.calc-head p{color:var(--label);font-size:16px;line-height:25px;margin:0;}
+
+.calc-layout{display:grid;grid-template-columns:1fr;gap:28px;align-items:start;}
+@media(min-width:1000px){.calc-layout{grid-template-columns:400px minmax(0,1fr);gap:56px;}}
+@media(min-width:1000px){.input-col{position:sticky;top:100px;}}
+.result-stack{display:flex;flex-direction:column;gap:24px;min-width:0;}
+@media(max-width:999px){
+  .input-col{display:contents;}
+  .panel-inputs{order:1;}
+  .result-stack{order:2;}
+  .side-help{order:3;}
+}
+
+/* ---------- Eingaben im Stil der Referenz ---------- */
+.panel{background:transparent;}
+.panel-inputs{display:flex;flex-direction:column;gap:30px;}
+.ctrl{display:block;}
+.ctrl-row{display:grid;grid-template-columns:minmax(0,1fr) 168px 26px;gap:12px;align-items:center;}
+.ctrl-row.no-input{grid-template-columns:1fr;}
+.ctrl-row.no-btn{grid-template-columns:minmax(0,1fr) 194px;}
+.ctrl-name{font-size:16px;line-height:21px;font-weight:600;color:var(--text);}
+.ctrl-name .info{display:inline-flex;width:17px;height:17px;border-radius:50%;border:1.5px solid var(--axis);color:var(--axis);font-size:11px;font-weight:700;align-items:center;justify-content:center;margin-left:6px;vertical-align:1px;cursor:help;position:relative;}
+.ctrl-name .info:hover::after{content:attr(data-tip);position:absolute;left:50%;bottom:calc(100% + 8px);transform:translateX(-50%);width:240px;background:var(--navy);color:#fff;font-size:12.5px;line-height:18px;font-weight:400;padding:10px 12px;border-radius:10px;z-index:5;box-shadow:0 10px 30px rgba(0,0,0,.2);}
+.field{position:relative;display:flex;align-items:flex-end;gap:7px;height:46px;padding:0 12px 6px;background:var(--field);border-radius:8px 8px 0 0;border-bottom:1.5px solid var(--field-line);transition:border-color .2s,background .2s;}
+.field:hover{background:#DCDFE8;}
+.field:focus-within{border-bottom:2px solid var(--navy);background:#DCDFE8;}
+.field-lbl{position:absolute;left:12px;right:8px;top:5px;font-size:11px;line-height:14px;color:var(--label);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.field-unit{font-size:14px;line-height:20px;color:var(--label);flex:0 0 auto;}
+.field input{flex:1 1 auto;border:none;background:transparent;font-family:inherit;font-size:16px;line-height:20px;font-weight:500;color:#1B1C1D;width:100%;padding:0;outline:none;min-width:0;}
+.step-btns{display:flex;flex-direction:column;gap:4px;}
+.step-btn{width:22px;height:22px;border-radius:50%;border:none;background:var(--navy);color:#fff;font-size:16px;line-height:1;cursor:pointer;display:flex;align-items:center;justify-content:center;padding:0;transition:transform .15s cubic-bezier(.3,1.6,.5,1),background .2s;-webkit-tap-highlight-color:transparent;}
+.step-btn:hover{background:#1C2B3E;}
+.step-btn:active{transform:scale(.86);}
+.ctrl-value{font-size:14px;line-height:20px;font-weight:600;color:var(--text);margin:16px 0 0 6px;font-variant-numeric:tabular-nums;}
+.ctrl-hint{font-size:12.5px;line-height:18px;color:var(--muted);margin:8px 0 0 6px;}
+.ctrl-scale{display:flex;justify-content:space-between;font-size:11px;color:var(--axis);margin:0 6px;}
+select.field-select{width:100%;height:46px;border:none;border-bottom:1.5px solid var(--field-line);border-radius:8px 8px 0 0;background:var(--field) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6' viewBox='0 0 10 6'%3E%3Cpath d='M0 0l5 6 5-6z' fill='%23283C55'/%3E%3C/svg%3E") no-repeat right 14px center;padding:16px 34px 4px 12px;font-family:inherit;font-size:16px;color:#1B1C1D;appearance:none;-webkit-appearance:none;cursor:pointer;outline:none;transition:background-color .2s;}
+select.field-select:hover,select.field-select:focus{background-color:#DCDFE8;}
+.select-wrap{position:relative;}
+.select-wrap .field-lbl{top:5px;}
+
+/* Regler: duenne Spur, satter Griff, Druckreaktion */
+input[type=range]{-webkit-appearance:none;appearance:none;width:100%;height:30px;margin:6px 0 0;background:transparent;cursor:pointer;display:block;touch-action:pan-y;}
+input[type=range]:focus{outline:none;}
+input[type=range]::-webkit-slider-runnable-track{height:4px;border-radius:99px;background:linear-gradient(90deg,var(--navy) 0%,var(--navy) var(--fill,50%),#E8E6EB var(--fill,50%),#E8E6EB 100%);}
+input[type=range]::-moz-range-track{height:4px;border-radius:99px;background:#E8E6EB;}
+input[type=range]::-moz-range-progress{height:4px;border-radius:99px;background:var(--navy);}
+input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;appearance:none;width:20px;height:20px;border-radius:50%;background:var(--navy);border:none;margin-top:-8px;box-shadow:0 0 0 0 rgba(40,60,85,.16),0 2px 6px rgba(40,60,85,.25);transition:transform .18s cubic-bezier(.3,1.6,.5,1),box-shadow .2s;}
+input[type=range]::-moz-range-thumb{width:20px;height:20px;border-radius:50%;background:var(--navy);border:none;box-shadow:0 2px 6px rgba(40,60,85,.25);transition:transform .18s;}
+input[type=range]:hover::-webkit-slider-thumb{box-shadow:0 0 0 8px rgba(40,60,85,.08),0 2px 6px rgba(40,60,85,.25);}
+input[type=range]:active::-webkit-slider-thumb{transform:scale(1.18);box-shadow:0 0 0 12px rgba(40,60,85,.12),0 3px 10px rgba(40,60,85,.3);}
+input[type=range]:focus-visible::-webkit-slider-thumb{box-shadow:0 0 0 8px rgba(175,155,100,.3);}
+input[type=range]:active::-moz-range-thumb{transform:scale(1.18);}
+
+/* Schalter */
+.switch-row{display:flex;align-items:center;gap:12px;}
+.switch{position:relative;width:46px;height:26px;flex:0 0 auto;}
+.switch input{opacity:0;width:0;height:0;position:absolute;}
+.switch .track{position:absolute;inset:0;background:#C8CCD4;border-radius:99px;transition:background .25s;cursor:pointer;}
+.switch .knob{position:absolute;top:3px;left:3px;width:20px;height:20px;background:#fff;border-radius:50%;transition:transform .3s cubic-bezier(.3,1.5,.5,1);pointer-events:none;box-shadow:0 2px 4px rgba(0,0,0,.2);}
+.switch input:checked + .track{background:var(--navy);}
+.switch input:checked ~ .knob{transform:translateX(20px);}
+.switch-label{font-size:15px;color:var(--text);}
+
+.detail-toggle{align-self:flex-start;display:inline-flex;align-items:center;gap:8px;height:34px;padding:0 16px;border-radius:99px;border:1.5px solid var(--navy);background:transparent;color:var(--navy);font-size:13px;font-weight:600;cursor:pointer;transition:background .2s,color .2s;}
+.detail-toggle:hover{background:var(--navy);color:#fff;}
+.detail-block{display:none;flex-direction:column;gap:30px;padding-top:6px;}
+.detail-block.open{display:flex;animation:fadein .3s ease;}
+@keyframes fadein{from{opacity:0;transform:translateY(6px);}to{opacity:1;transform:none;}}
+
+/* ---------- Karten: kein Rahmen, ein weicher Schatten ---------- */
+.rcard,.chart-card,.tile,.sh-block{background:var(--card);border-radius:14px;box-shadow:var(--shadow);}
+.rcard{padding:26px;}
+@media(max-width:560px){.rcard{padding:20px 18px;}}
+.rcard h2{font-size:20px;line-height:28px;font-weight:600;color:var(--text);margin:0 0 16px;}
+.section-h{font-size:22px;line-height:30px;font-weight:600;color:var(--text);margin:12px 0 -6px;}
+
+/* Ergebniskarten */
+.tiles{display:grid;grid-template-columns:1fr;gap:20px;}
+@media(min-width:620px){.tiles{grid-template-columns:repeat(3,minmax(0,1fr));}}
+.tiles.two{grid-template-columns:1fr;}
+@media(min-width:620px){.tiles.two{grid-template-columns:repeat(2,minmax(0,1fr));}}
+.tile{padding:18px 18px 16px;position:relative;min-width:0;transition:box-shadow .3s,transform .3s;}
+.tile:hover{box-shadow:var(--shadow-hover);transform:translateY(-2px);}
+.tile-head{display:flex;justify-content:space-between;align-items:flex-start;gap:10px;}
+.tile-label{font-size:14px;line-height:19px;font-weight:600;color:var(--text);}
+.tile-ico{width:32px;height:32px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex:0 0 auto;}
+.tile-ico svg{width:17px;height:17px;}
+.tile-ico.c1{background:rgba(40,60,85,.16);color:var(--navy);}
+.tile-ico.c2{background:rgba(199,80,80,.22);color:var(--red);}
+.tile-ico.c3{background:rgba(175,155,100,.26);color:var(--gold-dark);}
+.tile-num{font-size:24px;line-height:30px;font-weight:700;letter-spacing:-.01em;color:var(--text);margin:10px 0 2px;font-variant-numeric:tabular-nums;white-space:nowrap;}
+@media(min-width:620px) and (max-width:1199px){.tile-num{font-size:20px;}}
+.tile-extra{font-size:12px;line-height:17px;color:var(--label);min-height:17px;}
+.tile-extra b{font-weight:600;}
+.tile-sub{font-size:14px;line-height:20px;color:var(--text);margin-top:12px;}
+.c-s1{color:var(--s1) !important;} .c-s2{color:#A63D3D !important;} .c-s3{color:#8A7442 !important;}
+.val-good{color:var(--green) !important;} .val-warn{color:#8A6508 !important;} .val-bad{color:#A63D3D !important;}
+
+.verdict{border-radius:14px;padding:18px 22px;font-size:15px;line-height:23px;box-shadow:var(--shadow);background:var(--card);border-left:4px solid var(--navy);animation:fadein .35s ease;}
+.verdict.good{border-left-color:var(--green);} .verdict.warn{border-left-color:var(--amber);} .verdict.bad{border-left-color:var(--red);}
+.verdict strong{display:block;font-size:16px;margin-bottom:4px;}
+.verdict.good strong{color:var(--green);} .verdict.warn strong{color:#8A6508;} .verdict.bad strong{color:var(--red);}
+
+/* Tabellen */
+.rtable{width:100%;border-collapse:collapse;}
+.rtable td{padding:9px 0;font-size:14.5px;line-height:21px;color:var(--text);vertical-align:top;}
+.rtable td.num{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap;padding-left:14px;}
+.rtable tr.sep td{border-top:1px solid #DCDAE0;}
+.rtable tr.total td{font-weight:700;padding-top:14px;}
+.rtable td.sub{color:var(--muted);font-size:13px;}
+.rtable tr.hl-good{background:rgba(46,125,91,.06);}
+@media(max-width:560px){.rtable td{font-size:13.5px;}.rtable td.num{white-space:normal;}}
+.tag{display:inline-block;font-size:10.5px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;padding:2px 8px;border-radius:99px;margin-left:6px;vertical-align:1px;}
+.tag-good{background:rgba(46,125,91,.14);color:var(--green);}
+.tag-now{background:rgba(40,60,85,.10);color:var(--navy);}
+.cmp-cards{display:none;}
+@media(max-width:700px){
+  .cmp-table{display:none;}
+  .cmp-cards{display:flex;flex-direction:column;gap:12px;}
+  .cmp-card{border-radius:12px;padding:14px 16px;background:#fff;}
+  .cmp-card.is-best{box-shadow:inset 0 0 0 1.5px var(--green);}
+  .cmp-card.is-now{box-shadow:inset 0 0 0 1.5px var(--navy);}
+  .cmp-card .cc-head{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:8px;gap:8px;}
+  .cmp-card .cc-title{font-weight:600;font-size:15px;}
+  .cmp-card .cc-total{font-weight:700;font-size:16px;font-variant-numeric:tabular-nums;}
+  .cmp-card .cc-row{display:flex;justify-content:space-between;font-size:13px;color:var(--muted);padding:2px 0;}
+}
+
+/* Aufklappbare Karten (standardmaessig zu) */
+details.coll{padding:0;overflow:hidden;}
+details.coll > summary{list-style:none;cursor:pointer;padding:18px 24px;display:flex;align-items:center;gap:12px;flex-wrap:wrap;font-weight:600;font-size:16px;line-height:24px;color:var(--text);-webkit-tap-highlight-color:transparent;transition:background .2s;}
+details.coll > summary::-webkit-details-marker{display:none;}
+details.coll > summary:hover{background:rgba(40,60,85,.03);}
+.coll-sub{font-size:13px;font-weight:400;color:var(--muted);flex:1;}
+.coll-chev{margin-left:auto;width:9px;height:9px;border-right:2px solid var(--gold);border-bottom:2px solid var(--gold);transform:rotate(45deg);transition:transform .3s cubic-bezier(.2,.8,.2,1);flex:0 0 auto;margin-top:-4px;}
+details.coll[open] > summary .coll-chev{transform:rotate(-135deg);margin-top:2px;}
+.coll-body{padding:0 24px 24px;animation:fadein .3s ease;}
+@media(max-width:560px){details.coll > summary{padding:16px 18px;}.coll-sub{flex:1 0 100%;order:3;}.coll-chev{order:2;}.coll-body{padding:0 18px 18px;}}
+.rechenweg{background:#fff;border-radius:12px;padding:16px 18px;}
+.rechenweg h3,.rechenweg .rw-h{font-size:12px;font-weight:600;color:var(--muted);margin:0 0 10px;letter-spacing:.16em;text-transform:uppercase;}
+.rw-line{display:flex;justify-content:space-between;gap:14px;font-size:14px;line-height:20px;padding:7px 0;border-bottom:1px dashed #E3E1E6;}
+.rw-line:last-child{border-bottom:none;}
+.rw-formel{color:var(--muted);font-variant-numeric:tabular-nums;}
+.rw-formel b{color:var(--text);font-weight:600;}
+.rw-res{font-weight:600;color:var(--text);white-space:nowrap;font-variant-numeric:tabular-nums;}
+.rw-total{border-top:2px solid var(--navy);margin-top:6px;padding-top:10px;}
+@media(max-width:560px){.rw-line{flex-direction:column;gap:2px;}.rw-res{align-self:flex-end;}}
+.assumptions{font-size:13px;line-height:19px;color:var(--muted);margin-top:16px;padding-top:14px;border-top:1px solid #E3E1E6;}
+.assumptions b{color:var(--text);}
+
+/* ---------- Chart ---------- */
+.chart-card{padding:22px 22px 16px;min-width:0;}
+@media(max-width:560px){.chart-card{padding:18px 12px 12px;}}
+.chart-top{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;flex-wrap:nowrap;margin:0 4px 6px;}
+.chart-top .chart-legend{flex:1 1 auto;min-width:0;}
+.chart-top .chart-unit{flex:0 0 auto;}
+.chart-legend{display:flex;gap:6px 16px;flex-wrap:wrap;}
+.chart-legend span{display:inline-flex;align-items:center;gap:7px;font-size:12.5px;color:var(--label);}
+.chart-legend i{width:10px;height:10px;border-radius:2px;display:block;}
+.chart-legend i.dash{background:repeating-linear-gradient(90deg,currentColor 0 4px,transparent 4px 6px) !important;height:3px;border-radius:0;}
+.chart-legend i.band{width:14px;height:10px;border-radius:2px;box-shadow:inset 0 0 0 1px rgba(199,80,80,.35);}
+.chart-unit{font-size:12.5px;color:var(--label);border:1px solid #D6D3DA;border-radius:8px;padding:6px 12px;}
+.chart-box{position:relative;height:380px;cursor:crosshair;touch-action:pan-y;}
+@media(max-width:620px){.chart-box{height:320px;}.chart-unit{display:none;}}
+.chart-box canvas{position:absolute;inset:0;width:100% !important;height:100% !important;}
+.chart-hint{font-size:12px;color:var(--axis);text-align:center;margin-top:2px;}
+
+/* Zeitleiste mit Pill, wie in der Referenz: < 2046 > */
+.scrub{display:flex;align-items:center;gap:12px;margin:8px 4px 0;}
+.scrub-lbl,.scrub-max{font-size:12px;color:var(--label);flex:0 0 auto;transition:opacity .2s;}
+.scrub-track{position:relative;flex:1;height:40px;}
+.scrub-ticks{position:absolute;inset:0 6px;display:flex;align-items:center;justify-content:space-between;pointer-events:none;}
+.scrub-ticks i{width:1.5px;height:12px;background:var(--navy);opacity:.75;display:block;border-radius:1px;}
+.scrub-pill{position:absolute;top:50%;transform:translate(-50%,-50%);background:var(--card);border-radius:10px;padding:4px 10px;font-size:15px;font-weight:700;color:var(--navy);white-space:nowrap;pointer-events:none;font-variant-numeric:tabular-nums;box-shadow:0 2px 12px rgba(0,0,0,.14);transition:transform .15s cubic-bezier(.3,1.6,.5,1),box-shadow .2s;z-index:1;}
+.scrub-pill::before{content:"\2039\00a0";color:var(--navy);}
+.scrub-pill::after{content:"\00a0\203A";color:var(--navy);}
+.scrub-track:active .scrub-pill,.scrub-track.drag .scrub-pill{transform:translate(-50%,-50%) rotate(-6deg) scale(1.08);box-shadow:0 8px 20px rgba(0,0,0,.2);}
+.scrub input[type=range]{position:absolute;inset:0;width:100%;height:100%;margin:0;opacity:0;cursor:grab;z-index:2;}
+.scrub input[type=range]:active{cursor:grabbing;}
+.scrub input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:64px;height:40px;background:transparent;box-shadow:none;}
+@media(max-width:560px){.scrub-lbl,.scrub-max{font-size:11px;}.scrub-ticks i:nth-child(2n){display:none;}}
+
+/* ---------- Seitenspalte ---------- */
+.side-help{margin-top:34px;display:flex;flex-direction:column;gap:16px;}
+.sh-block{padding:18px 20px;}
+.sh-title{font-size:12px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin-bottom:10px;}
+.sh-links{display:flex;flex-direction:column;gap:7px;}
+.sh-links a{font-size:14.5px;color:var(--text);text-decoration:none;font-weight:500;transition:color .2s;}
+.sh-links a:hover{color:var(--gold);}
+.sh-text{font-size:13.5px;line-height:20px;color:var(--muted);margin:0 0 10px;}
+.sh-phone{font-size:16px;font-weight:600;color:var(--text);text-decoration:none;}
+.sh-note{font-size:12px;line-height:18px;color:var(--muted);margin:0;padding:0 4px;}
+
+/* ---------- Knoepfe ---------- */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;height:48px;padding:0 28px;border-radius:10px;border:none;font-family:inherit;font-size:15px;font-weight:600;line-height:1;text-decoration:none;cursor:pointer;white-space:nowrap;transition:background .2s,transform .15s cubic-bezier(.3,1.6,.5,1),box-shadow .2s;}
+.btn:active{transform:scale(.97);}
+.btn-gold,.btn-primary{background:var(--gold);color:#fff;box-shadow:0 6px 18px rgba(175,155,100,.35);}
+.btn-gold:hover,.btn-primary:hover{background:var(--gold-dark);}
+.btn-ghost{background:transparent;color:#fff;border:1px solid rgba(255,255,255,.4);}
+.btn[disabled]{opacity:.55;cursor:not-allowed;transform:none;}
+
+/* ---------- Funnel ---------- */
+.funnel{background:var(--navy);border-radius:14px;padding:32px 26px;color:#fff;position:relative;overflow:hidden;box-shadow:var(--shadow);}
+@media(min-width:760px){.funnel{padding:44px 48px;}}
+.funnel::before{content:"";position:absolute;inset:0;background:url("/assets/footer-navy.webp") left top;opacity:.55;pointer-events:none;}
+.funnel-inner{position:relative;z-index:1;max-width:680px;}
+.funnel .eyebrow{display:block;font-size:12px;line-height:18px;font-weight:600;letter-spacing:.18em;color:#D9C695;text-transform:uppercase;}
+.funnel h2{font-size:26px;line-height:1.25;font-weight:700;font-style:italic;margin:10px 0 10px;letter-spacing:-.015em;}
+@media(min-width:760px){.funnel h2{font-size:32px;}}
+.funnel .lead{color:#D9E0EA;font-size:15.5px;line-height:24px;margin:0 0 24px;}
+.fstep{display:none;}
+.fstep.active{display:block;animation:fadein .3s ease;}
+.fq{font-size:19px;line-height:27px;font-weight:700;font-style:italic;margin:0 0 16px;}
+.fopts{display:grid;grid-template-columns:1fr;gap:10px;}
+@media(min-width:620px){.fopts{grid-template-columns:1fr 1fr;}}
+.fopt{display:block;position:relative;background:rgba(255,255,255,.04);color:#fff;border:1px solid rgba(255,255,255,.28);border-radius:10px;min-height:52px;padding:13px 16px 13px 46px;font-size:15px;line-height:22px;text-align:left;cursor:pointer;transition:border-color .2s,background .2s,transform .15s;}
+.fopt::before{content:"";position:absolute;left:16px;top:50%;transform:translateY(-50%);width:16px;height:16px;border-radius:50%;border:1.5px solid rgba(255,255,255,.55);transition:all .2s;}
+.fopt:hover{border-color:var(--gold);background:rgba(255,255,255,.08);}
+.fopt:active{transform:scale(.99);}
+.fopt.selected{border-color:var(--gold);background:rgba(175,155,100,.16);}
+.fopt.selected::before{background:var(--gold);border-color:var(--gold);box-shadow:inset 0 0 0 3px var(--navy);}
+.fprogress{display:flex;height:4px;border-radius:99px;background:rgba(255,255,255,.16);margin-bottom:24px;overflow:hidden;}
+.fprogress i{flex:1 1 0;height:4px;background:transparent;display:block;transition:background .35s;}
+.fprogress i.done{background:var(--gold);}
+.fnav{display:flex;justify-content:space-between;align-items:center;margin-top:22px;gap:12px;flex-wrap:wrap;}
+.fback{background:none;border:none;color:#AEBACB;font-size:14px;cursor:pointer;padding:6px 0;}
+.fback:hover{color:#fff;}
+.ffields{display:grid;grid-template-columns:1fr;gap:12px;margin-bottom:6px;}
+@media(min-width:620px){.ffields.two{grid-template-columns:1fr 1fr;}}
+.ffield label{display:block;font-size:12.5px;line-height:18px;font-weight:600;color:#D9E0EA;margin-bottom:5px;}
+.ffield input,.ffield select{width:100%;height:46px;padding:0 14px;border-radius:10px;border:1px solid rgba(255,255,255,.3);background:rgba(255,255,255,.08);color:#fff;font-family:inherit;font-size:15px;outline:none;transition:border-color .2s,background .2s;}
+.ffield input::placeholder{color:#8B9BAF;}
+.ffield input:focus,.ffield select:focus{border-color:var(--gold);background:rgba(255,255,255,.14);}
+.ffield select option{color:var(--navy);}
+.fconsent{display:flex;gap:10px;align-items:flex-start;margin:14px 0 4px;}
+.fconsent input{width:18px;height:18px;flex:0 0 auto;margin-top:2px;accent-color:var(--gold);}
+.fconsent label{font-size:12.5px;line-height:18px;color:#C5CFDC;}
+.fconsent a{color:#fff;text-decoration:underline;text-underline-offset:2px;}
+.fnote{font-size:12.5px;line-height:18px;color:#AEBACB;margin-top:14px;}
+.fsoft{margin-top:22px;padding-top:16px;border-top:1px solid rgba(255,255,255,.16);font-size:14px;line-height:22px;color:#C5CFDC;}
+.fsoft a{color:#fff;font-weight:600;text-decoration:none;border-bottom:1px solid var(--gold);}
+.fdone{display:none;text-align:center;padding:16px 0;}
+.fdone.show{display:block;animation:fadein .35s ease;}
+.fdone .fcheck{width:62px;height:62px;border-radius:50%;background:rgba(175,155,100,.22);display:flex;align-items:center;justify-content:center;margin:0 auto 16px;}
+.fdone h3{font-size:24px;line-height:1.3;margin:0 0 8px;font-weight:700;font-style:italic;}
+.fdone p{color:#D9E0EA;font-size:15px;line-height:23px;margin:0 auto;max-width:480px;}
+.fsummary{background:rgba(255,255,255,.07);border-radius:10px;padding:14px 18px;margin:0 0 18px;font-size:13.5px;line-height:20px;color:#C5CFDC;}
+.fsummary b{color:#fff;}
+
+/* ---------- Kernaussage (Lead-Haken) ---------- */
+.hook{position:relative;overflow:hidden;background:var(--navy);color:#fff;border-radius:14px;padding:24px 26px;box-shadow:var(--shadow);}
+.hook::before{content:"";position:absolute;inset:0;background:url("/assets/footer-navy.webp") left top;opacity:.5;pointer-events:none;}
+.hook > *{position:relative;}
+.hook-k{font-size:12px;line-height:18px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:#D9C695;}
+.hook-num{font-size:38px;line-height:1.1;font-weight:700;letter-spacing:-.02em;margin:8px 0 8px;font-variant-numeric:tabular-nums;color:#fff;}
+@media(min-width:760px){.hook-num{font-size:42px;}}
+.hook-num.gold{color:#E3D3A4;}
+.hook-t{font-size:15px;line-height:23px;color:#D9E0EA;margin:0 0 18px;max-width:620px;}
+.hook-t b{color:#fff;font-weight:600;}
+.hook-row{display:flex;gap:14px;align-items:center;flex-wrap:wrap;}
+.hook-row .hook-note{font-size:12.5px;color:#AEBACB;}
+.hook-link{display:inline-flex;align-items:center;gap:8px;padding:9px 16px;border:1px solid rgba(227,211,164,.55);border-radius:10px;color:#F1E7C9;font-size:14.5px;font-weight:600;text-decoration:none;transition:background .2s,border-color .2s;}
+.hook-link:hover{background:rgba(227,211,164,.12);border-color:rgba(227,211,164,.85);color:#fff;}
+.hook-link span{transition:transform .2s;}
+.hook-link:hover span{transform:translateX(3px);}
+.pillset{display:flex;gap:8px;flex-wrap:wrap;margin-top:4px;}
+.pillset button{height:36px;padding:0 14px;border-radius:99px;border:1.5px solid #D6D3DA;background:#fff;color:var(--text);font-size:14px;font-weight:600;cursor:pointer;transition:all .2s;}
+.pillset button:hover{border-color:var(--navy);}
+.pillset button.on{background:var(--navy);border-color:var(--navy);color:#fff;}
+
+/* ---------- Mobile Ergebnisleiste ---------- */
+.mres{display:none;}
+@media(max-width:999px){
+  .mres{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:45;align-items:center;gap:12px;padding:10px 16px calc(10px + env(safe-area-inset-bottom));background:rgba(40,60,85,.97);color:#fff;box-shadow:0 -8px 30px rgba(0,0,0,.18);transform:translateY(110%);transition:transform .35s cubic-bezier(.2,.8,.2,1);}
+  .mres.show{transform:none;}
+  .mres-t{flex:1;min-width:0;}
+  .mres-k{display:block;font-size:10.5px;line-height:14px;letter-spacing:.12em;text-transform:uppercase;color:#D9C695;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+  .mres-n{display:block;font-size:19px;line-height:25px;font-weight:700;font-variant-numeric:tabular-nums;white-space:nowrap;}
+  .mres .btn{height:42px;padding:0 16px;font-size:14px;}
+  body.has-mres{padding-bottom:76px;}
+}
+
+/* ---------- Wissenswertes / FAQ ---------- */
+.know{margin-top:56px;max-width:860px;}
+.know h2{font-size:28px;line-height:1.2;font-weight:700;font-style:italic;letter-spacing:-.015em;margin:0 0 8px;color:var(--text);}
+.know h2 .dot{color:var(--gold);font-style:normal;}
+.know > p{color:var(--label);margin:0 0 20px;}
+.know details{background:var(--card);border-radius:14px;box-shadow:var(--shadow);margin-bottom:14px;overflow:hidden;}
+.know summary{list-style:none;cursor:pointer;padding:18px 22px;font-weight:600;font-size:16px;line-height:23px;display:flex;gap:14px;align-items:center;}
+.know summary::-webkit-details-marker{display:none;}
+.know summary::after{content:"";margin-left:auto;flex:0 0 auto;width:9px;height:9px;border-right:2px solid var(--gold);border-bottom:2px solid var(--gold);transform:rotate(45deg);transition:transform .3s;}
+.know details[open] summary::after{transform:rotate(-135deg);}
+.know .ans{padding:0 22px 20px;color:var(--label);font-size:15px;line-height:24px;}
+.know .ans p{margin:0 0 10px;}
+
+.ctrl-name .info:focus::after{content:attr(data-tip);position:absolute;left:50%;bottom:calc(100% + 8px);transform:translateX(-50%);width:240px;background:var(--navy);color:#fff;font-size:12.5px;line-height:18px;font-weight:400;padding:10px 12px;border-radius:10px;z-index:5;box-shadow:0 10px 30px rgba(0,0,0,.2);}
+.ctrl-name .info:focus{outline:none;border-color:var(--navy);color:var(--navy);}
+@media(max-width:560px){.ctrl-name .info:hover::after,.ctrl-name .info:focus::after{left:0;transform:none;width:220px;}}
+
+/* Formular-Fehlermeldungen (Funnel auf Navy) */
+.f-err{font-size:13px;line-height:18px;color:#FFC2C2;margin:6px 0 0;font-weight:500;}
+.f-err a{color:#fff;font-weight:700;}
+.ffield [aria-invalid="true"]{border-color:#FF9C9C !important;}
+
+#funnel,#wissen{scroll-margin-top:90px;}
+
+/* ---------- Finanzcheck ---------- */
+.fc-card .fback{color:var(--muted);}
+.fc-card .fback:hover{color:var(--navy);}
+.fc-card{background:var(--card);border-radius:14px;box-shadow:var(--shadow);padding:26px;}
+@media(max-width:560px){.fc-card{padding:20px 18px;}}
+
+.chart-unit-sel{position:relative;padding:0;display:inline-flex;}
+.chart-unit-sel select{appearance:none;-webkit-appearance:none;border:none;background:transparent url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6' viewBox='0 0 10 6'%3E%3Cpath d='M0 0l5 6 5-6z' fill='%23283C55'/%3E%3C/svg%3E") no-repeat right 10px center;font-family:inherit;font-size:12.5px;color:var(--label);padding:6px 28px 6px 12px;cursor:pointer;border-radius:8px;}
+.chart-unit-sel select:focus-visible{outline:2px solid var(--gold);}
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;}
+.tile-num.bump{animation:bump .45s cubic-bezier(.3,1.6,.5,1);}
+@keyframes bump{0%{transform:scale(1);}40%{transform:scale(1.045);}100%{transform:scale(1);}}
+/* Reihenfolge wie im Original: Diagramm zuerst, dann Kacheln, dann die Kernaussage */
+.result-stack > .chart-card{order:1;}
+.result-stack > .tiles{order:2;}
+.result-stack > .hook{order:3;}
+.result-stack > *{order:4;}
+.result-stack > .chart-card + .chart-hint{order:1;}
+/* ---------- Handy: kompakte Eingaben, Kacheln als Liste, mehr Platz fuer das Diagramm ---------- */
+@media(max-width:999px){.side-help .sh-block:first-child{display:none;}.side-help{margin-top:0;}}
+@media(max-width:600px){
+  .calc-shell{padding:22px 0 40px;}
+  .calc-head{margin-bottom:22px;}
+  .calc-head .eyebrow{font-size:11px;letter-spacing:.14em;}
+  .calc-head h1{font-size:30px;margin:8px 0 10px;}
+  .calc-head p{font-size:15px;line-height:23px;}
+  .calc-layout{gap:20px;}
+  .panel-inputs{gap:20px;padding:18px 16px;background:var(--card);border-radius:14px;box-shadow:var(--shadow);}
+  .ctrl-row{grid-template-columns:minmax(0,1fr) 116px 76px;gap:8px;}
+  .ctrl-row.no-btn{grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);}
+  .ctrl-name{font-size:15px;line-height:20px;hyphens:auto;-webkit-hyphens:auto;overflow-wrap:break-word;}
+  .hook-num{overflow-wrap:anywhere;}
+  .field{height:44px;padding:0 10px 6px;}
+  .field-lbl{display:none;}
+  .field{align-items:center;padding:0 10px;}
+  .field input{font-size:16px;font-weight:600;}
+  .step-btns{flex-direction:row;gap:6px;}
+  .step-btn{width:35px;height:35px;font-size:19px;}
+  .ctrl-value{font-size:13px;margin:8px 0 0 2px;color:var(--label);font-weight:500;}
+  .ctrl-scale{font-size:10.5px;}
+  .ctrl-hint{font-size:12px;margin-left:2px;}
+  input[type=range]{height:34px;margin-top:2px;}
+  input[type=range]::-webkit-slider-thumb{width:26px;height:26px;margin-top:-11px;}
+  input[type=range]::-moz-range-thumb{width:26px;height:26px;}
+  .result-stack{gap:14px;}
+  .hook{padding:20px 18px;}
+  .hook-num{font-size:34px;margin:6px 0;}
+  .hook-t{font-size:14.5px;line-height:22px;margin-bottom:14px;}
+  .hook-link{width:100%;justify-content:space-between;}
+  .hook-row .hook-note{display:none;}
+  .tiles{gap:0;background:var(--card);border-radius:14px;box-shadow:var(--shadow);overflow:hidden;}
+  .tile{display:grid;grid-template-columns:minmax(0,1fr) auto;column-gap:12px;align-items:center;padding:14px 16px;border-radius:0;box-shadow:none;background:transparent;}
+  .tile + .tile{border-top:1px solid rgba(40,60,85,.08);}
+  .tile:hover{transform:none;box-shadow:none;}
+  .tile-head{grid-column:1;grid-row:1;}
+  .tile-ico{display:none;}
+  .tile-label{font-size:13.5px;}
+  .tile-num{grid-column:2;grid-row:1 / span 2;margin:0;font-size:19px;line-height:24px;text-align:right;}
+  .tile-extra{grid-column:1;grid-row:2;min-height:0;}
+  .tile-extra:empty{display:none;}
+  .tile-sub{grid-column:1 / -1;grid-row:3;margin-top:4px;font-size:12.5px;line-height:17px;color:var(--label);}
+  .chart-card{padding:16px 12px 14px !important;}
+  .chart-top{margin:0 2px 2px;}
+  .chart-legend{gap:4px 12px;}
+  .chart-legend span{font-size:11.5px;}
+  .chart-box{height:300px;}
+  .chart-unit-sel{display:inline-flex !important;}
+  .chart-unit-sel select{padding:4px 26px 4px 10px;border:1px solid #D6D3DA;}
+  select.field-select{padding:0 34px 0 12px;}
+  .scrub{gap:8px;margin:4px 0 0;}
+  .scrub-pill{font-size:14px;padding:4px 8px;}
+  .chart-hint{font-size:12px;}
+  details.coll > summary{padding:14px 16px;}
+}
+@media(max-width:600px){input,select,textarea{font-size:16px !important;}}
+
+/* ---------- Fuss: Inhalte wie www.solventa.ch, klar in Spalten gegliedert ---------- */
+.footer{position:relative;padding:64px 24px 28px;background:url("/assets/footer-navy.webp") #283c55;color:#fff;font-family:'Inter',Arial,sans-serif;font-size:14.5px;line-height:1.55;}
+.footer *{box-sizing:border-box;}
+.footer p{margin:0;}
+.footer a{color:rgba(255,255,255,.86);text-decoration:none;transition:color .25s;}
+.footer a:hover{color:#D9C695;}
+.footer__content{max-width:1192px;margin:0 auto;}
+.footer__grid{display:grid;grid-template-columns:minmax(0,1.25fr) repeat(4,minmax(0,1fr));gap:40px 36px;padding-bottom:44px;}
+@media(max-width:1100px){.footer__grid{grid-template-columns:repeat(3,minmax(0,1fr));}}
+@media(max-width:640px){.footer__grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:30px 18px;}.footer__col--brand,.footer__col:nth-child(2){grid-column:1/-1;}
+  .footer__list{gap:11px;}.footer__hotline{white-space:normal;}
+  .footer__memberships{gap:18px;width:100%;justify-content:space-between;flex-wrap:nowrap;}.footer__memberlogo img{height:24px !important;}}
+.footer__title{font-size:12px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:#C9B784;margin-bottom:16px;}
+.footer__name{font-size:17px;font-weight:700;color:#fff;margin-bottom:10px;}
+.footer__list{display:flex;flex-direction:column;gap:9px;list-style:none;margin:0;padding:0;}
+.footer__muted{color:rgba(255,255,255,.72);}
+.footer__link{display:flex;align-items:center;gap:10px;}
+.footer__link svg{width:15px;height:15px;fill:#C9B784;flex:0 0 auto;}
+.footer__contact{display:flex;flex-direction:column;gap:8px;margin-top:16px;}
+.footer__hotline{display:inline-flex;align-items:center;gap:8px;margin-top:16px;padding:10px 14px;white-space:normal;max-width:100%;border:1px solid rgba(201,183,132,.7);border-radius:10px;font-weight:600;color:#fff !important;}
+.footer__hotline:hover{background:rgba(201,183,132,.14);}
+.footer__follow{display:flex;align-items:center;gap:10px;margin-top:20px;}
+.footer__social-link{display:inline-flex;justify-content:center;align-items:center;height:32px;width:32px;border:1px solid rgba(255,255,255,.3);border-radius:50%;transition:background .25s,border-color .25s;}
+.footer__social-link svg{width:14px;height:14px;fill:#fff;}
+.footer__social-link:hover{background:#AF9B64;border-color:#AF9B64;}
+.footer__bottom{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:22px 40px;padding-top:24px;border-top:1px solid rgba(255,255,255,.18);}
+.footer__legal{font-size:12.5px;line-height:1.6;color:rgba(255,255,255,.66);max-width:560px;}
+.footer__legal b{color:rgba(255,255,255,.86);font-weight:600;}
+.footer__legal-links{display:flex;flex-wrap:wrap;gap:6px 20px;list-style:none;margin:8px 0 0;padding:0;font-size:12.5px;}
+.footer__legal{min-width:0;}
+.footer__memberships{display:flex;align-items:center;gap:28px;flex-wrap:wrap;}
+.footer__memberlogo{display:block;line-height:0;opacity:.88;transition:opacity .25s;}
+.footer__memberlogo:hover{opacity:1;}
+.footer__memberlogo img{height:34px;width:auto;display:block;}
+@media(max-width:640px){.footer{padding:48px 18px 24px;}.footer__memberlogo img{height:30px;}}
+.a-go,.a-go:hover{color:#1B2A3D;}.erb-bar span.c-ki{color:#1B2A3D;}
+
+h1,h2,h3,.section-title,.calc-head h1,.ctrl-name{hyphens:manual;-webkit-hyphens:manual;}
+h1,h2,.section-title{text-wrap:balance;}
+.btn-primary,.btn-gold,.btn-primary:hover,.btn-gold:hover{color:#1B2A3D;}
+.btn-primary .arr,.btn-gold .arr{color:inherit;}
+.btn-primary:focus-visible,.btn-gold:focus-visible{outline:3px solid #1B2A3D;outline-offset:2px;}
+
+@media(max-width:600px){
+  .ctrl-row{grid-template-columns:minmax(0,1fr) 132px 70px;gap:8px;}
+  .field{padding:0 8px;gap:4px;}
+  .field-unit{font-size:12px;}
+  .field input{font-size:15.5px;}
+  .calc-head h1{font-size:30px;line-height:1.12;}
+}
+.opt{font-weight:400;color:var(--muted);}</style>
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Starten oder Warten: Was kostet Aufschieben?">
+<meta name="twitter:image" content="https://rechner.solventa.ch/assets/og/rechner-starten-oder-warten.jpg">
+<meta name="twitter:title" content="Starten oder Warten: Was kostet Aufschieben? | SOLVENTA">
+<meta name="twitter:description" content="Was kostet es, mit Sparen und Anlegen ein paar Jahre zu warten? Der Rechner zeigt die Differenz in Franken und wie viel Sie später mehr sparen müssten.">
+<style>
+.svck{position:fixed;left:16px;right:16px;bottom:16px;z-index:9999;max-width:560px;margin:0 auto;background:#fff;color:#1B2A3D;border:1px solid #DDE1E7;border-radius:16px;box-shadow:0 18px 50px rgba(20,30,45,.22);padding:20px 22px;font-family:inherit;font-size:14px;line-height:21px;display:none;}
+.svck.show{display:block;}
+@media(min-width:900px){.svck{left:auto;right:24px;bottom:24px;margin:0;}}
+.svck h2{font-size:16px;line-height:22px;margin:0 0 6px;font-style:normal;color:#1B2A3D;}
+.svck p{margin:0 0 14px;color:#4A5565;}
+.svck a{color:#1B2A3D;text-decoration:underline;}
+.svck-btns{display:flex;gap:8px;flex-wrap:wrap;}
+.svck-btns button{flex:1 1 150px;min-height:46px;border-radius:10px;font:inherit;font-weight:600;font-size:14.5px;cursor:pointer;padding:0 14px;}
+.svck-ok{background:#AF9B64;border:1px solid #AF9B64;color:#1B2A3D;}
+.svck-no{background:#fff;border:1px solid #1B2A3D;color:#1B2A3D;}
+.svck-more{background:none;border:none;padding:0;margin:12px 0 0;font:inherit;font-size:13px;color:#4A5565;text-decoration:underline;cursor:pointer;}
+.svck-opts{display:none;margin:4px 0 14px;border-top:1px solid #E6E9EE;}
+.svck.open .svck-opts{display:block;}
+.svck-row{display:flex;gap:12px;align-items:flex-start;padding:12px 0;border-bottom:1px solid #E6E9EE;}
+.svck-row input{width:20px;height:20px;margin:1px 0 0;flex:0 0 auto;accent-color:#1B2A3D;}
+.svck-row b{display:block;color:#1B2A3D;font-size:14px;}
+.svck-row span{font-size:13px;color:#4A5565;}
+.svck-save{display:none;}
+.svck.open .svck-save{display:flex;}
+.svck.open .svck-more{display:none;}
+@media(max-width:600px){.svck{padding:16px;bottom:10px;left:10px;right:10px;}}
+
+/* r26 Feinschliff */
+header.site{background:#fff;backdrop-filter:none;-webkit-backdrop-filter:none;}
+.ph.last{background:rgba(255,255,255,.06);border-color:#AF9B64;box-shadow:inset 0 0 0 1px rgba(175,155,100,.35);}
+.footer__contact{gap:10px;}
+.footer__link{display:flex;align-items:center;gap:10px;}
+.footer__link svg{width:17px;height:17px;fill:none !important;stroke:#C9B784;flex:0 0 17px;}
+.footer__hot{align-items:flex-start;margin-top:18px;}
+.footer__hot svg{margin-top:2px;}
+.footer__hot span{display:block;}
+.footer__hot .footer__hot-l{font-size:12.5px;color:rgba(255,255,255,.66);line-height:1.4;}
+.footer__hot .footer__hot-n{font-weight:600;color:#fff;}
+.hilfen-head{max-width:720px;}
+.hilfen-grid{display:grid;grid-template-columns:minmax(0,1fr);gap:18px;margin-top:30px;}
+@media(min-width:900px){.hilfen-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;}}
+.hilfe{display:flex;flex-direction:column;background:#fff;border:1px solid var(--border);border-radius:16px;padding:28px;scroll-margin-top:96px;}
+@media(max-width:600px){.hilfe{padding:22px 18px;}}
+.hilfe .kicker{margin-bottom:8px;}
+.hilfe-title{font-size:21px;line-height:28px;font-weight:700;font-style:italic;color:var(--navy);margin:0 0 10px;letter-spacing:-.01em;}
+.hilfe .section-text{font-size:15px;line-height:23px;margin:0;}
+.hilfe .rem2-list{margin-top:14px;}
+.hilfe-form{margin-top:auto;padding-top:22px;}
+.hilfe-form > div{margin-top:0;}
+@media(max-width:600px){.hilfe .field-row{grid-template-columns:minmax(0,1fr) !important;}}
+.erb{align-items:start;}
+input[type=file]{width:100%;max-width:100%;font:inherit;font-size:13px;color:var(--muted,#6B7280);background:#FAFAF7;border:1px dashed #CFC6AE;border-radius:10px;padding:7px 8px;cursor:pointer;}
+input[type=file]::file-selector-button{font:inherit;font-size:13px;font-weight:600;color:var(--navy,#283C55);background:#fff;border:1px solid var(--navy,#283C55);border-radius:8px;padding:6px 12px;margin-right:10px;cursor:pointer;}
+input[type=file]:hover{border-color:#AF9B64;}
+.hilfe-sep{border:0;border-top:1px solid var(--border);margin:22px 0 0;}
+
+/* r27 Angleichung Hauptseite */
+:root{--muted:#3D5069;--gray-bg:#F5F5F5;}
+.section-text{color:var(--text);}
+.btn{border-radius:12px;font-weight:700;}
+.a-go{border-radius:12px;font-weight:700;}
+.action.primary .a-go{color:#fff;}
+.btn-primary,.btn-gold,.btn-primary:hover,.btn-gold:hover{color:#fff;}
+header.site{border-bottom:0;box-shadow:0 10px 10px rgba(0,0,0,.08);}
+@media(min-width:900px){header.site .header-inner{height:92px;}header.site .solventa-logo{height:34px;}}
+.footer{font-size:16px;line-height:1.5;}
+.footer__title,.footer__name{font-size:21px;line-height:28px;font-weight:700;letter-spacing:0;text-transform:none;color:#AF9B64;margin-bottom:10px;}
+.footer__strong{font-weight:700;color:#fff;font-size:16px;line-height:24px;}
+.footer__contact{margin-top:22px;gap:4px;}
+.footer__contact .footer__link{color:#fff;gap:10px;}
+.footer__link svg{width:15px;height:15px;fill:#AF9B64 !important;stroke:none !important;flex:0 0 15px;}
+.footer__hotline{display:inline-flex;align-items:center;margin-top:22px;padding:7px 18px;border:0;border-radius:12px;background:#AF9B64;color:#fff !important;font-weight:700;font-size:16px;line-height:25px;white-space:normal;max-width:100%;}
+.footer__hotline:hover{background:#9C8A57;}
+.footer__list{gap:4px;}
+.footer__list a{color:#fff;font-size:15.5px;line-height:24px;}
+.footer__note{margin-top:6px !important;color:rgba(255,255,255,.75);font-size:14px;}
+.footer__bottom{border-top:2px solid #fff;padding-top:14px;align-items:flex-start;}
+.footer__legal{font-size:12.3px;line-height:1.6;color:#fff;}
+.footer__legal b{color:#fff;font-weight:400;}
+.footer__legal-links{font-size:12.3px;}
+.footer__legal-links a{color:#fff;}
+.footer__follow{display:flex;align-items:center;gap:8px;margin-top:14px;}
+.footer__follow-l{font-weight:700;font-size:15px;color:#fff;margin-right:4px;}
+.footer__social-link{width:24px;height:24px;background:#AF9B64;border:0;}
+.footer__social-link svg{width:12px;height:12px;fill:#283C55;}
+.footer__social-link:hover{background:#fff;border-color:#fff;}
+@media(min-width:1101px){
+.footer__grid{grid-template-columns:minmax(0,1.15fr) minmax(0,1.3fr) minmax(0,1.05fr) minmax(0,.95fr);gap:34px 40px;}
+.footer__hotline{white-space:nowrap;font-size:15.5px;padding:7px 16px;}
+.footer__grid > .footer__col:nth-child(1){grid-column:1;grid-row:1;}
+.footer__grid > .footer__col:nth-child(2){grid-column:2;grid-row:1 / span 2;}
+.footer__grid > .footer__col:nth-child(3){grid-column:3;grid-row:1 / span 2;}
+.footer__grid > .footer__col:nth-child(4){grid-column:4;grid-row:1 / span 2;}
+.footer__grid > .footer__col:nth-child(5){grid-column:1;grid-row:2;}
+}
+@media(min-width:641px) and (max-width:1100px){.footer__hotline{font-size:15px;padding:7px 14px;}}
+@media(max-width:640px){.footer__list a{font-size:14.5px;line-height:22px;}.footer__title{font-size:19px;}}
+
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="header-inner">
+    <a href="https://www.solventa.ch/" aria-label="SOLVENTA Startseite"><svg class="solventa-logo" xmlns="http://www.w3.org/2000/svg" width="297.012" height="43.234" viewBox="0 0 297.012 43.234">
+  <g id="Gruppe_2783" data-name="Gruppe 2783" transform="translate(0.006 0.001)">
+    <path id="Pfad_3757" data-name="Pfad 3757" d="M38.641,19.072a14.273,14.273,0,0,0-8.034-2.656c-3.2,0-4.734.833-4.734,2.408,0,1.928,1.53,2.566,7.3,4.389s9.5,4.734,9.5,10.6c0,5.964-4.681,10.645-13.3,10.645-7.149,0-10.8-2.513-12.971-4.141l3.256-6.654a14.444,14.444,0,0,0,9.122,3.5c3.346,0,5.124-.938,5.124-2.813,0-1.92-1.433-2.858-7.052-4.681-5.611-1.875-9.61-4.434-9.61-10.3,0-6.212,5.176-10.1,12.963-10.1,6.707,0,9.857,2.266,11.538,3.4Z" transform="translate(-16.412 -1.225)" fill="#283b52"/>
+    <path id="Pfad_3758" data-name="Pfad 3758" d="M35.9,44.458c-9.5,0-15.626-6.407-15.626-17.592s6.384-17.6,15.626-17.6c9.5,0,15.611,6.407,15.611,17.6S45.17,44.458,35.9,44.458m0-27.749c-4.741,0-7.682,3.653-7.682,10.112,0,6.4,2.941,10.052,7.719,10.052,4.734,0,7.674-3.653,7.674-10.052,0-6.459-2.941-10.112-7.712-10.112" transform="translate(8.717 -1.225)" fill="#283b52"/>
+    <path id="Pfad_3759" data-name="Pfad 3759" d="M33.38,35.2H48.309v7.224h-23.3V9.413H33.38Z" transform="translate(39.518 -0.279)" fill="#283b52"/>
+    <path id="Pfad_3760" data-name="Pfad 3760" d="M48.36,42.421H39.793L27.6,9.413h8.942l7.607,23.3h.09l7.614-23.3h8.65Z" transform="translate(56.384 -0.278)" fill="#283b52"/>
+    <path id="Pfad_3761" data-name="Pfad 3761" d="M55.239,16.4H40.745v5.956H49.62v6.459H40.745v6.482H55.621v7.127H32.373V9.413H55.239Z" transform="translate(87.404 -0.276)" fill="#283b52"/>
+    <path id="Pfad_3762" data-name="Pfad 3762" d="M65.37,42.421h-7.7l-13.151-18.6h-.053v18.6H36.1V9.413H43.75l13.2,18.612H57V9.413H65.37Z" transform="translate(111.621 -0.278)" fill="#283b52"/>
+    <path id="Pfad_3763" data-name="Pfad 3763" d="M70.846,16.494H59.841V42.421H51.469V16.494h-11V9.413H70.846Z" transform="translate(140.058 -0.277)" fill="#283b52"/>
+    <path id="Pfad_3764" data-name="Pfad 3764" d="M77.356,42.421,64.873,9.413H56.261L43.778,42.421h8.56l.915-2.791h-.008l7.082-21.8h.1L63.83,28.355H60.522l-2.266,6.939h7.832l2.371,7.127Z" transform="translate(161.555 -0.278)" fill="#283b52"/>
+    <path id="Pfad_3765" data-name="Pfad 3765" d="M60.885,22.045l6.482-7.569-2-5.7c-8-.5-12.971,1.05-16.872,4.081l2.581,7.352Z" transform="translate(192.251 -5.023)" fill="#af9c64"/>
+    <path id="Pfad_3766" data-name="Pfad 3766" d="M52.816,9.423a43.274,43.274,0,0,0-5.229,6.257l2.363,6.354L55.126,16Z" transform="translate(186.321 -0.211)" fill="#af9c64"/>
+    <path id="Pfad_3767" data-name="Pfad 3767" d="M67.359,22.818,63.653,12.285l-9.8-1.838L48,17.281l2.513,6.752a39.674,39.674,0,0,0,16.849-1.215" transform="translate(188.987 6.447)" fill="#af9c64"/>
+    <path id="Pfad_3768" data-name="Pfad 3768" d="M50.321,17.186l3.668,10.42A23.141,23.141,0,0,0,64.3,19.894,27.667,27.667,0,0,0,68.3,11.77L56.81,9.617Z" transform="translate(204.097 1.051)" fill="#af9c64"/>
+    <path id="Pfad_3769" data-name="Pfad 3769" d="M64.346,15.959a21.459,21.459,0,0,0,.548-3.5S57.264,9.32,51,8.712l1.785,5.079Z" transform="translate(208.512 -4.834)" fill="#af9c64"/>
+    <path id="Pfad_3770" data-name="Pfad 3770" d="M87.008,35.623c11.493-9.085,17.637-22.01,17.637-22.01s-1.365-1.38-1.605-1.6c-7.877-7.022-14.8-3.7-17.809,4.576-.1.255-.2.5-.278.75-.263.818-.548,1.725-.833,2.663-.173.555-.345,1.118-.518,1.68-.713,2.281-1.418,4.539-2,6.009A22.319,22.319,0,0,1,67.158,40.941c-.578.188-1.178.353-1.77.5a46.152,46.152,0,0,1-15.716,1.065c-.39-.038-.773-.068-1.155-.113l1.335,3.586a77.53,77.53,0,0,0,11.328.068L58.4,49.816a.33.33,0,0,0,.27.525h9.8a1.227,1.227,0,0,0,1.1-.683l3.181-6.549a59.668,59.668,0,0,0,6.984-2.941l4.179,9.437a1.23,1.23,0,0,0,1.125.735H97.128a.324.324,0,0,0,.263-.518c-4.869-6.549-10.382-14.2-10.382-14.2" transform="translate(192.361 -8.196)" fill="#af9c64"/>
+  </g>
+</svg>
+</a>
+    <div class="header-right">
+      <details class="tools-menu"><summary><span><span class="hide-s">Alle </span>Rechner</span></summary><div class="tools-panel"><a href="https://rechner.solventa.ch/kaufpreis/"><b>Kaufpreisrechner</b><span>Wie viel Immobilie können Sie sich leisten?</span></a><a href="https://rechner.solventa.ch/tragbarkeit/"><b>Tragbarkeitsrechner</b><span>Welches Einkommen verlangt die Bank?</span></a><a href="https://rechner.solventa.ch/mieten-oder-kaufen/"><b>Mieten oder Kaufen</b><span>Was kostet Sie Wohnen über die Jahre?</span></a><a href="https://rechner.solventa.ch/sparen-anlegen/"><b>Sparen oder Anlegen</b><span>Sparkonto gegen Anlage über Ihren Horizont.</span></a><a href="https://rechner.solventa.ch/starten-oder-warten/" class="current"><b>Starten oder Warten</b><span>Was kostet es, später anzufangen?</span></a><a href="https://rechner.solventa.ch/inflation/"><b>Inflationsrechner</b><span>Wie viel ist Ihr Geld in 20 Jahren noch wert?</span></a><a href="https://rechner.solventa.ch/franchise/"><b>Franchise-Rechner</b><span>Welche Franchise ist für Sie die günstigste?</span></a><a href="https://finanzcheck.solventa.ch/"><b>Finanzcheck</b><span>Zwölf Fragen, sofort Ihre Punktzahl.</span></a></div></details>
+      <a href="tel:+41415117606" class="phone-link"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6.6 10.8c1.3 2.6 3.4 4.7 6 6l2-2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.5.6.6 0 1 .4 1 1v3.5c0 .6-.4 1-1 1C10.5 20.7 3.3 13.5 3.3 4.9c0-.6.4-1 1-1H8c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.5.1.3 0 .7-.2 1l-2 2z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>+41 41 511 76 06</a>
+      <a href="tel:+41415117606" class="phone-only" aria-label="Anrufen"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6.6 10.8c1.3 2.6 3.4 4.7 6 6l2-2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.5.6.6 0 1 .4 1 1v3.5c0 .6-.4 1-1 1C10.5 20.7 3.3 13.5 3.3 4.9c0-.6.4-1 1-1H8c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.5.1.3 0 .7-.2 1l-2 2z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+    </div>
+  </div>
+</header>
+
+
+<main class="calc-shell">
+  <div class="container">
+    <div class="calc-head">
+      <span class="eyebrow">Kostenlos, ohne Anmeldung, ohne E&#8209;Mail</span>
+      <h1>Starten oder Warten<span class="dot">?</span></h1>
+      <p>Jedes Jahr Warten fehlt am Ende doppelt: als Einzahlung und als Zinseszins. Verschieben Sie den Startpunkt über der Kurve und sehen Sie, was es kostet.</p>
+    </div>
+    <div class="calc-layout">
+      <div class="input-col">
+        <div class="panel panel-inputs"><div class="ctrl">
+  <div class="ctrl-row">
+    <label class="ctrl-name" for="start">Startkapital</label>
+    <div class="field"><span class="field-lbl">Startkapital</span><span class="field-unit">CHF</span><input type="text" id="start" inputmode="decimal" autocomplete="off"></div>
+    <div class="step-btns">
+      <button type="button" class="step-btn" id="start_plus" aria-label="Startkapital erhöhen">+</button>
+      <button type="button" class="step-btn" id="start_minus" aria-label="Startkapital verringern">&minus;</button>
+    </div>
+  </div>
+  <div class="ctrl-value" id="start_lbl"></div><input type="range" id="start_range" min="0" max="500000" step="1000" value="10000" aria-label="Startkapital"><div class="ctrl-scale"><span>0</span><span>500&#x27;000</span></div>
+  
+</div><div class="ctrl">
+  <div class="ctrl-row">
+    <label class="ctrl-name" for="rate">Sparrate</label>
+    <div class="field"><span class="field-lbl">Sparrate</span><span class="field-unit">CHF</span><input type="text" id="rate" inputmode="decimal" autocomplete="off"></div>
+    <div class="step-btns">
+      <button type="button" class="step-btn" id="rate_plus" aria-label="Sparrate erhöhen">+</button>
+      <button type="button" class="step-btn" id="rate_minus" aria-label="Sparrate verringern">&minus;</button>
+    </div>
+  </div>
+  <div class="ctrl-value" id="rate_lbl"></div><input type="range" id="rate_range" min="0" max="5000" step="50" value="300" aria-label="Sparrate"><div class="ctrl-scale"><span>0</span><span>5&#x27;000</span></div>
+  
+</div><div class="ctrl">
+  <div class="ctrl-row no-btn">
+    <label class="ctrl-name" for="intervall">Sparintervall</label>
+    <div class="select-wrap"><span class="field-lbl">Sparintervall</span><select class="field-select" id="intervall"><option value="12" selected>monatlich</option><option value="4">vierteljährlich</option><option value="2">halbjährlich</option><option value="1">jährlich</option></select></div>
+  </div>
+  
+</div><div class="ctrl">
+  <div class="ctrl-row">
+    <label class="ctrl-name" for="rendite">Rendite<span class="info" tabindex="0" role="note" aria-label="Durchschnittliche jährliche Rendite der Anlage nach Kosten." data-tip="Durchschnittliche jährliche Rendite der Anlage nach Kosten.">i</span></label>
+    <div class="field"><span class="field-lbl">Rendite</span><input type="text" id="rendite" inputmode="decimal" autocomplete="off"><span class="field-unit">%</span></div>
+    <div class="step-btns">
+      <button type="button" class="step-btn" id="rendite_plus" aria-label="Rendite erhöhen">+</button>
+      <button type="button" class="step-btn" id="rendite_minus" aria-label="Rendite verringern">&minus;</button>
+    </div>
+  </div>
+  <div class="ctrl-value" id="rendite_lbl"></div><input type="range" id="rendite_range" min="0" max="8" step="0.25" value="4.0" aria-label="Rendite"><div class="ctrl-scale"><span>0 %</span><span>8 %</span></div>
+  <p class="ctrl-hint">Annahme nach Kosten, keine Prognose und keine Garantie.</p>
+</div><div class="ctrl">
+  <div class="ctrl-row">
+    <label class="ctrl-name" for="dauer">Anlage­horizont<span class="info" tabindex="0" role="note" aria-label="Zeitraum ab heute, zum Beispiel bis zur Pensionierung." data-tip="Zeitraum ab heute, zum Beispiel bis zur Pensionierung.">i</span></label>
+    <div class="field"><span class="field-lbl">Anlage­horizont</span><input type="text" id="dauer" inputmode="decimal" autocomplete="off"><span class="field-unit">Jahre</span></div>
+    <div class="step-btns">
+      <button type="button" class="step-btn" id="dauer_plus" aria-label="Anlage­horizont erhöhen">+</button>
+      <button type="button" class="step-btn" id="dauer_minus" aria-label="Anlage­horizont verringern">&minus;</button>
+    </div>
+  </div>
+  <div class="ctrl-value" id="dauer_lbl"></div><input type="range" id="dauer_range" min="2" max="45" step="1" value="30" aria-label="Anlagehorizont"><div class="ctrl-scale"><span>2 Jahre</span><span>45 Jahre</span></div>
+  
+</div><div class="ctrl">
+  <div class="ctrl-row">
+    <label class="ctrl-name" for="warten">Sie starten in</label>
+    <div class="field"><span class="field-lbl">Sie starten in</span><input type="text" id="warten" inputmode="decimal" autocomplete="off"><span class="field-unit">Jahren</span></div>
+    <div class="step-btns">
+      <button type="button" class="step-btn" id="warten_plus" aria-label="Sie starten in erhöhen">+</button>
+      <button type="button" class="step-btn" id="warten_minus" aria-label="Sie starten in verringern">&minus;</button>
+    </div>
+  </div>
+  <div class="ctrl-value" id="warten_lbl"></div><input type="range" id="warten_range" min="0" max="44" step="1" value="10" aria-label="Sie starten in"><div class="ctrl-scale"><span>sofort</span><span>in 44 Jahren</span></div>
+  <p class="ctrl-hint">Auch direkt im Diagramm über der Kurve einstellbar.</p>
+</div></div>
+        <div class="side-help">
+  <div class="sh-block"><div class="sh-title">Weitere Rechner</div><div class="sh-links"><a href="https://rechner.solventa.ch/kaufpreis/">Kaufpreisrechner</a><a href="https://rechner.solventa.ch/tragbarkeit/">Tragbarkeitsrechner</a><a href="https://rechner.solventa.ch/mieten-oder-kaufen/">Mieten oder Kaufen</a><a href="https://rechner.solventa.ch/sparen-anlegen/">Sparen oder Anlegen</a><a href="https://rechner.solventa.ch/inflation/">Inflationsrechner</a><a href="https://rechner.solventa.ch/franchise/">Franchise-Rechner</a><a href="https://finanzcheck.solventa.ch/">Finanzcheck</a></div></div>
+  <div class="sh-block"><div class="sh-title">Frage zur Rechnung?</div>
+    <p class="sh-text">Rufen Sie an. Wir gehen die Zahlen mit Ihnen durch, ohne dass Sie etwas abschliessen m&uuml;ssen.</p>
+    <a class="sh-phone" href="tel:+41415117606">+41 41 511 76 06</a></div>
+  <p class="sh-note">Modellrechnung auf Basis Ihrer Eingaben. Ersetzt keine individuelle Beratung.</p>
+</div>
+      </div>
+      <div class="result-stack"><div class="hook"><div class="hook-k">Das kostet Sie das Warten</div><div class="hook-num gold" id="tCost">–</div>
+  <p class="hook-t" id="hookText"></p>
+  <div class="hook-row"><a class="hook-link" href="#funnel">Heute starten, aber richtig<span aria-hidden="true">&rarr;</span></a><span class="hook-note">kostenlos, rund zehn Minuten</span></div></div><div class="tiles"><div class="tile"><div class="tile-head"><span class="tile-label">Sofort starten</span><span class="tile-ico c3"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l6-6 4 4 8-8"/><path d="M15 7h6v6"/><path d="M3 21h18"/></svg></span></div><div class="tile-num" id="tNow">–</div><div class="tile-extra" id="tNowX"></div><div class="tile-sub" id="tNowSub"></div></div><div class="tile"><div class="tile-head"><span class="tile-label">Später starten</span><span class="tile-ico c2"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span></div><div class="tile-num" id="tLate">–</div><div class="tile-extra" id="tLateX"></div><div class="tile-sub" id="tLateSub"></div></div><div class="tile"><div class="tile-head"><span class="tile-label">Nötige Sparrate zum Aufholen</span><span class="tile-ico c1"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="6" rx="7" ry="3"/><path d="M5 6v4c0 1.7 3.1 3 7 3s7-1.3 7-3V6"/><path d="M5 10v4c0 1.7 3.1 3 7 3s7-1.3 7-3v-4"/><path d="M5 14v4c0 1.7 3.1 3 7 3s7-1.3 7-3v-4"/></svg></span></div><div class="tile-num" id="tCatch">–</div><div class="tile-extra" id="tCatchX"></div><div class="tile-sub" id="tCatchSub"></div></div></div><div class="chart-card">
+  <div class="chart-top">
+    <div class="chart-legend" id="sowChart_legend"></div>
+    <label class="chart-unit chart-unit-sel"><span class="sr-only">Zeitachse</span><select id="sowChart_unit" aria-label="Zeitachse anzeigen als"><option value="jahre">Jahre</option><option value="dauer">Dauer</option></select></label>
+  </div>
+  <div class="scrub" style="margin-top:4px;"><span class="scrub-lbl" id="sowWait_minlbl">sofort</span><div class="scrub-track" id="sowWait_track"></div><span class="scrub-max" id="sowWait_maxlbl"></span></div>
+  <div class="chart-box"><canvas id="sowChart" role="img" aria-label="Diagramm"></canvas></div>
+  <div class="scrub">
+    <span class="scrub-lbl" id="sowChart_minlbl">heute</span>
+    <div class="scrub-track" id="sowChart_track"></div>
+    <span class="scrub-max" id="sowChart_maxlbl"></span>
+  </div>
+  <p class="chart-hint">Ziehen Sie im Diagramm oder an der Zeitleiste.</p>
+</div><details class="rcard coll"><summary><span class="coll-title">So wird gerechnet</span><span class="coll-sub">Formel und Annahmen</span><span class="coll-chev" aria-hidden="true"></span></summary><div class="coll-body">
+<div class="rechenweg" id="rwBox"></div>
+<div class="assumptions"><b>Annahmen:</b> Einzahlung jeweils zu Beginn der Periode, Zinseszins mit dem auf die Periode umgerechneten
+Jahreszins. Wer wartet, lässt das Startkapital in dieser Zeit ohne Ertrag liegen und beginnt danach mit derselben
+Sparrate. Steuern und Teuerung sind nicht berücksichtigt. Modellrechnung, keine Anlageempfehlung.</div></div></details></div>
+    </div>
+    <div style="margin-top:34px;"><section class="funnel" id="funnel"><div class="funnel-inner">
+  <div id="funnelForm">
+    <span class="eyebrow">Nächster Schritt</span>
+    <h2>Wer früh anfängt, braucht weniger.</h2>
+    <p class="lead">Zwei Fragen, dann zeigt Ihnen ein Berater, wie Sie mit Ihrem Budget sinnvoll starten. Ohne Produktverkauf im ersten Gespräch.</p>
+    <div class="fprogress" id="fprog"><i></i><i></i><i></i></div>
+    <div class="fstep active" id="fstep0"><p class="fq">Was hält Sie bisher vom Start ab?</p><div class="fopts"><button type="button" class="fopt" onclick="F.answer('grund',&quot;Keine Zeit, mich darum zu kümmern&quot;,1,this)">Keine Zeit, mich darum zu kümmern</button><button type="button" class="fopt" onclick="F.answer('grund',&quot;Ich weiss nicht, womit anfangen&quot;,1,this)">Ich weiss nicht, womit anfangen</button><button type="button" class="fopt" onclick="F.answer('grund',&quot;Zu wenig Geld übrig&quot;,1,this)">Zu wenig Geld übrig</button><button type="button" class="fopt" onclick="F.answer('grund',&quot;Ich habe schon gestartet&quot;,1,this)">Ich habe schon gestartet</button></div></div><div class="fstep" id="fstep1"><p class="fq">Wie viel könnten Sie monatlich zur Seite legen?</p><div class="fopts"><button type="button" class="fopt" onclick="F.answer('betrag',&quot;Bis CHF 200&quot;,2,this)">Bis CHF 200</button><button type="button" class="fopt" onclick="F.answer('betrag',&quot;CHF 200 bis 500&quot;,2,this)">CHF 200 bis 500</button><button type="button" class="fopt" onclick="F.answer('betrag',&quot;CHF 500 bis 1'000&quot;,2,this)">CHF 500 bis 1&#x27;000</button><button type="button" class="fopt" onclick="F.answer('betrag',&quot;Mehr als CHF 1'000&quot;,2,this)">Mehr als CHF 1&#x27;000</button></div><div class="fnav"><button type="button" class="fback" onclick="F.show(0)">&larr; Zurück</button></div></div><div class="fstep" id="fstep2"><div class="fsummary" id="fSummary"></div><p class="fq">Wohin dürfen wir uns melden?</p><div class="ffields two"><div class="ffield"><label for="f_vorname">Vorname</label><input type="text" id="f_vorname" name="vorname" autocomplete="given-name"></div><div class="ffield"><label for="f_nachname">Nachname <span class="opt">(freiwillig)</span></label><input type="text" id="f_nachname" name="nachname" autocomplete="family-name"></div><div class="ffield"><label for="f_telefon">Telefon</label><input type="tel" id="f_telefon" name="telefon" autocomplete="tel" inputmode="tel" placeholder="079 000 00 00"></div><div class="ffield"><label for="f_plz">PLZ</label><input type="text" id="f_plz" name="plz" autocomplete="postal-code" inputmode="numeric" maxlength="4" placeholder="6300"></div></div><div class="fconsent"><input type="checkbox" id="f_consent" name="einwilligung_kontakt"><label for="f_consent">SOLVENTA (Schweiz) AG darf mich zu dieser Anfrage telefonisch oder per E-Mail kontaktieren. Wie wir Ihre Angaben verarbeiten, steht in der <a href="/datenschutz/" target="_blank" rel="noopener">Datenschutzerklärung</a>.</label></div><div class="fnav"><button type="button" class="fback" onclick="F.show(1)">&larr; Zurück</button><button type="button" class="btn btn-gold" id="fSubmit">Rückruf anfordern</button></div><p class="fnote">Kostenlos und unverbindlich. Ihre Berechnung wird mitgesendet.</p></div>
+    <div class="fsoft">Zuerst Sparkonto und Anlage vergleichen? <a href="https://rechner.solventa.ch/sparen-anlegen/">Zum Rechner Sparen oder Anlegen</a></div>
+  </div>
+  <div class="fdone" id="funnelDone"><div class="fcheck"><svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M5 12.5l4.5 4.5L19 7.5" stroke="#AF9B64" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></div><h3 id="fDoneTitle">Vielen Dank.</h3><p id="fDoneText"></p></div>
+</div></section></div>
+    <section class="know" id="wissen"><h2>Wissenswertes zum Zeitpunkt<span class="dot">.</span></h2><p>Warum der Start mehr ausmacht als die Höhe der Sparrate.</p><details><summary>Warum kostet Warten so viel?</summary><div class="ans"><p>Wer später beginnt, verliert nicht nur die Einzahlungen dieser Jahre, sondern vor allem die Erträge, die diese Einzahlungen bis zum Ende abgeworfen hätten. Dieser Zinseszinseffekt ist in den letzten Jahren am grössten.</p></div></details><details><summary>Kann ich verpasste Jahre aufholen?</summary><div class="ans"><p>Ja, aber nur mit einer deutlich höheren Sparrate. Der Rechner zeigt, wie viel Sie pro Monat sparen müssten, um trotz späterem Start auf denselben Betrag zu kommen.</p></div></details><details><summary>Lohnt sich ein Start auch mit kleinen Beträgen?</summary><div class="ans"><p>Ja. Gerade bei kleinen Beträgen ist die Zeit der grösste Hebel. Einmal eingerichtet, läuft ein Sparplan ohne weiteren Aufwand.</p></div></details></section><script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Warum kostet Warten so viel?", "acceptedAnswer": {"@type": "Answer", "text": "Wer später beginnt, verliert nicht nur die Einzahlungen dieser Jahre, sondern vor allem die Erträge, die diese Einzahlungen bis zum Ende abgeworfen hätten. Dieser Zinseszinseffekt ist in den letzten Jahren am grössten."}}, {"@type": "Question", "name": "Kann ich verpasste Jahre aufholen?", "acceptedAnswer": {"@type": "Answer", "text": "Ja, aber nur mit einer deutlich höheren Sparrate. Der Rechner zeigt, wie viel Sie pro Monat sparen müssten, um trotz späterem Start auf denselben Betrag zu kommen."}}, {"@type": "Question", "name": "Lohnt sich ein Start auch mit kleinen Beträgen?", "acceptedAnswer": {"@type": "Answer", "text": "Ja. Gerade bei kleinen Beträgen ist die Zeit der grösste Hebel. Einmal eingerichtet, läuft ein Sparplan ohne weiteren Aufwand."}}]}</script>
+  </div>
+</main><form name="rechner-starten-warten" data-netlify="true" netlify-honeypot="bot-field" hidden><input type="hidden" name="form-name" value="rechner-starten-warten"><input type="hidden" name="utm_term" value=""><input type="hidden" name="gclid" value=""><input name="bot-field"><input type="text" name="grund"><input type="text" name="betrag"><input type="text" name="startkapital"><input type="text" name="sparrate"><input type="text" name="rendite"><input type="text" name="horizont"><input type="text" name="wartezeit"><input type="text" name="kosten_warten"><input type="text" name="vorname"><input type="text" name="nachname"><input type="text" name="telefon"><input type="text" name="plz"><input type="text" name="einwilligung_kontakt"><input type="text" name="utm_source"><input type="text" name="utm_medium"><input type="text" name="utm_campaign"><input type="text" name="utm_content"><input type="text" name="page_url"><input type="text" name="tool"></form>
+
+<footer class="footer site">
+  <div class="footer__content">
+    <div class="footer__grid">
+      <div class="footer__col footer__col--brand">
+        <div class="footer__title">SOLVENTA (Schweiz) AG</div>
+        <p class="footer__strong">Gartenstrasse 2<br>CH-6300 Zug</p>
+        <div class="footer__contact">
+          <a href="tel:+41415117606" class="footer__link"><svg viewBox="0 0 512 512" aria-hidden="true"><path d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64 0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3l49.3-40.4c13.7-11.2 18.4-30 11.6-46.3l-40-96z"/></svg>+41 41 511 76 06</a>
+          <a href="mailto:info@solventa.ch" class="footer__link"><svg viewBox="0 0 512 512" aria-hidden="true"><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4l217.6 163.2c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4 0-26.5-21.5-48-48-48H48zM0 176v208c0 35.3 28.7 64 64 64h384c35.3 0 64-28.7 64-64V176L294.4 339.2a63.9 63.9 0 0 1-76.8 0L0 176z"/></svg>info@solventa.ch</a>
+        </div>
+      </div>
+      <div class="footer__col">
+        <div class="footer__title">Erreichbarkeit</div>
+        <p class="footer__strong">Montag bis Freitag<br>09.00 bis 12.00 Uhr<br>13.00 bis 17.00 Uhr</p><p class="footer__note">Abendtermine auf Anfrage</p>
+        <a href="tel:0800777777" class="footer__hotline">Kostenlose Kundenhotline 24/7</a>
+      </div>
+      <div class="footer__col">
+        <div class="footer__title">Themen</div>
+        <ul class="footer__list"><li><a href="https://freizuegigkeit.solventa.ch/">Freizügigkeits-Check</a></li><li><a href="https://hypotheken.solventa.ch/">Hypothekenvergleich</a></li><li><a href="https://saeule3a.solventa.ch/">Renditevergleich Säule 3a</a></li><li><a href="https://beratung.solventa.ch/">Kostenlose Erstberatung</a></li><li><a href="https://krankenkasse.solventa.ch/">Krankenkassenvergleich</a></li><li><a href="https://steuern.solventa.ch/">Steueroptimierungs-Check</a></li><li><a href="https://nachlass.solventa.ch/">Nachlass und Vorsorge</a></li></ul>
+      </div>
+      <div class="footer__col">
+        <div class="footer__title">Rechner</div>
+        <ul class="footer__list"><li><a href="https://rechner.solventa.ch/kaufpreis/">Kaufpreisrechner</a></li><li><a href="https://rechner.solventa.ch/tragbarkeit/">Tragbarkeitsrechner</a></li><li><a href="https://rechner.solventa.ch/mieten-oder-kaufen/">Mieten oder Kaufen</a></li><li><a href="https://rechner.solventa.ch/sparen-anlegen/">Sparen oder Anlegen</a></li><li><a href="https://rechner.solventa.ch/starten-oder-warten/">Starten oder Warten</a></li><li><a href="https://rechner.solventa.ch/inflation/">Inflationsrechner</a></li><li><a href="https://rechner.solventa.ch/franchise/">Franchise-Rechner</a></li><li><a href="https://finanzcheck.solventa.ch/">Finanzcheck</a></li></ul>
+      </div>
+      <div class="footer__col">
+        <div class="footer__title">Quicklinks</div>
+        <ul class="footer__list"><li><a href="https://www.solventa.ch" target="_blank" rel="noopener">Zur Hauptseite solventa.ch</a></li><li><a href="https://www.solventa.ch/quicklinks/beratungsangebot" target="_blank" rel="noopener">Beratungsangebot</a></li><li><a href="https://www.solventa.ch/quicklinks/finanzwissen" target="_blank" rel="noopener">Finanzwissen</a></li><li><a href="https://www.solventa.ch/quicklinks/karriere" target="_blank" rel="noopener">Karriere</a></li><li><a href="https://www.solventa.ch/quicklinks/ueber-uns" target="_blank" rel="noopener">Über uns</a></li></ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="footer__legal">
+        <p><b>&copy; <span data-zt="{J}">2026</span> SOLVENTA (Schweiz) AG</b> &middot; Im Register der FINMA eingetragene Aktiengesellschaft (F01534836), mit Zulassung als ungebundene Versicherungsvermittlerin. Beratung gemäss den Vorgaben des Finanzdienstleistungsgesetzes.</p>
+        <ul class="footer__legal-links">
+          <li><a href="/datenschutz/">Datenschutz</a></li>
+          <li><a href="/impressum/">Impressum</a></li><li><a href="#" data-consent-open>Cookie-Einstellungen</a></li>
+          <li><a href="https://www.solventa.ch/versicherungsaufsicht" target="_blank" rel="noopener">Versicherungsaufsicht</a></li>
+        </ul>
+        <div class="footer__follow"><span class="footer__follow-l">Folge uns</span><a class="footer__social-link" href="https://www.facebook.com/solventa.ch/" target="_blank" rel="nofollow noreferrer" aria-label="SOLVENTA auf Facebook"><svg viewBox="0 0 24 24"><path d="M13.5 22v-8.2h2.8l.4-3.3h-3.2V8.4c0-.9.3-1.6 1.6-1.6h1.7V3.9c-.3 0-1.3-.1-2.5-.1-2.5 0-4.2 1.5-4.2 4.3v2.4H7.3v3.3h2.8V22h3.4z"/></svg></a>
+          <a class="footer__social-link" href="https://www.linkedin.com/company/solventa-switzerland/" target="_blank" rel="nofollow noreferrer" aria-label="SOLVENTA auf LinkedIn"><svg viewBox="0 0 24 24"><path d="M6.9 8.5H3.6V21h3.3V8.5zM5.3 3A1.9 1.9 0 1 0 5.3 6.9 1.9 1.9 0 0 0 5.3 3zM21 21v-6.9c0-3.4-.7-6-4.7-6-1.9 0-3.2 1-3.7 2h-.1V8.5h-3.1V21h3.3v-6.2c0-1.6.3-3.2 2.3-3.2s2 1.9 2 3.3V21H21z"/></svg></a></div>
+      </div>
+      <div class="footer__memberships"><a href="https://www.polyreg.ch/" title="SRO PolyReg" class="footer__memberlogo" target="_blank" rel="noopener"><img src="/assets/polyreg-white.svg" alt="SRO PolyReg" width="799" height="299" loading="lazy" decoding="async"></a><a href="https://www.fpvs.ch/de/" title="FinanzPlaner Verband Schweiz" class="footer__memberlogo" target="_blank" rel="noopener"><img src="/assets/fpvs-white.svg" alt="FinanzPlaner Verband Schweiz" width="176" height="54" loading="lazy" decoding="async"></a><a href="https://www.finos.ch/" title="FINOS Finanzombudsstelle Schweiz" class="footer__memberlogo" target="_blank" rel="noopener"><img src="/assets/finos.png" alt="FINOS Finanzombudsstelle Schweiz" width="700" height="183" loading="lazy" decoding="async"></a></div>
+    </div>
+  </div>
+</footer>
+<script src="/assets/vendor/chart.umd.min.js"></script>
+<script>
+
+window.dataLayer = window.dataLayer || [];
+(function(){
+  var touched = false;
+  document.addEventListener('input', function(ev){ if(touched || !ev.target.closest || !ev.target.closest('.panel-inputs, .chart-card')) return; touched = true; window.dataLayer.push({event:'calc_interaction', calc:location.pathname}); }, true);
+  document.addEventListener('click', function(ev){
+    var t = ev.target.closest && ev.target.closest('a[href="#funnel"]');
+    if(t){ window.dataLayer.push({event:'hook_cta_click', calc:location.pathname}); setTimeout(function(){ var o = document.querySelector('#funnel .fstep.active .fopt, #funnel .fstep.active input'); if(o) o.focus({preventScroll:true}); }, 450); }
+    var a = ev.target.closest && ev.target.closest('a[href^="tel:"]');
+    if(a) window.dataLayer.push({event:'phone_click', calc:location.pathname, link_location:(a.closest('header') ? 'header' : a.closest('footer') ? 'footer' : 'content')});
+  });
+})();
+function fmtNum(n, dec){
+  if(!isFinite(n)) return '–';
+  dec = (dec === undefined) ? 0 : dec;
+  var s = Math.abs(n).toFixed(dec);
+  var parts = s.split('.');
+  parts[0] = parts[0].replace(/\B(?=(\d{3})+(?!\d))/g, "'");
+  return (n < 0 && Math.abs(n) >= Math.pow(10, -dec) / 2 ? '\u2212' : '') + parts.join('.');
+}
+function chf(n, dec){ return (n < 0 && Math.abs(n) >= 0.5 ? '\u2212 ' : '') + "CHF " + fmtNum(Math.abs(n), dec); }
+function pct(n, dec){ dec = (dec===undefined)?1:dec; return fmtNum(n, dec) + " %"; }
+function parseNum(v){
+  if(typeof v !== 'string') v = String(v);
+  v = v.replace(/\u2212/g, '-').replace(/CHF|Fr\.|%|Jahre?n?/gi, '').replace(/['\u2019\s]/g, '');
+  if((v.match(/\./g) || []).length > 1 || /^-?\d{1,3}(\.\d{3})+$/.test(v)) v = v.replace(/\./g, '');
+  if(/^\d{1,3}(,\d{3})+$/.test(v)) v = v.replace(/,/g, ''); else v = v.replace(',', '.');
+  var n = parseFloat(v);
+  return isFinite(n) ? n : NaN;
+}
+function clamp(v, lo, hi){ return Math.min(hi, Math.max(lo, v)); }
+function paintRange(el){
+  if(!el) return;
+  var mn = parseFloat(el.min), mx = parseFloat(el.max), v = parseFloat(el.value);
+  el.style.setProperty('--fill', ((mx > mn) ? ((v - mn) / (mx - mn)) * 100 : 0).toFixed(2) + '%');
+}
+function setSemantic(id, kind){
+  var el = document.getElementById(id);
+  if(!el) return;
+  el.classList.remove('val-good','val-warn','val-bad');
+  if(kind) el.classList.add('val-' + kind);
+}
+function hexA(hex, a){
+  var h = hex.replace('#','');
+  if(h.length === 3) h = h.split('').map(function(c){ return c + c; }).join('');
+  var n = parseInt(h, 16);
+  return 'rgba(' + (n >> 16 & 255) + ',' + (n >> 8 & 255) + ',' + (n & 255) + ',' + a + ')';
+}
+
+/* Zahlen zaehlen weich zum neuen Wert (wie die Ergebniskarten der Referenz) */
+function tweenText(el, target, fmt, dur){
+  if(typeof el === 'string') el = document.getElementById(el);
+  if(!el) return;
+  fmt = fmt || function(v){ return fmtNum(v); };
+  var from = el.__v; el.__v = target;
+  if(from === undefined || !isFinite(from) || !isFinite(target) || window.matchMedia('(prefers-reduced-motion: reduce)').matches){ el.textContent = fmt(target); return; }
+  if(Math.abs(target - from) < 1e-9){ el.textContent = fmt(target); return; }
+  if(el.__raf) cancelAnimationFrame(el.__raf);
+  var t0 = performance.now(); dur = dur || 650;
+  (function step(t){
+    var p = Math.min(1, (t - t0) / dur); p = 1 - Math.pow(1 - p, 4);
+    el.textContent = fmt(from + (target - from) * p);
+    if(p < 1) el.__raf = requestAnimationFrame(step); else { el.__raf = 0; el.textContent = fmt(target); }
+  })(t0);
+}
+
+/* Zahlenfeld mit +/- und Regler, beidseitig gekoppelt */
+function bindStepper(id, opts){
+  var input = document.getElementById(id);
+  var range = document.getElementById(id + '_range');
+  var plus  = document.getElementById(id + '_plus');
+  var minus = document.getElementById(id + '_minus');
+  var lbl   = document.getElementById(id + '_lbl');
+  var state = {value: opts.value};
+  var dec = opts.dec || 0;
+  /* Vorbelegung per URL, z.B. ?kaufpreis=900000 (fuer Kampagnen-Links) */
+  try { var qp = new URLSearchParams(window.location.search).get(id); if(qp !== null && qp !== '' && isFinite(parseNum(qp))) state.value = clamp(parseNum(qp), opts.min, opts.max); } catch(e){}
+  function show(src){
+    if(input && src !== 'input') input.value = opts.inputFmt ? opts.inputFmt(state.value) : fmtNum(state.value, dec);
+    if(range){ if(src !== 'range') range.value = state.value; if(src !== 'range') paintRange(range); range.setAttribute('aria-valuetext', opts.fmt ? opts.fmt(state.value) : fmtNum(state.value, dec)); }
+    if(lbl) lbl.textContent = opts.fmt ? opts.fmt(state.value) : fmtNum(state.value, dec);
+  }
+  function set(v, src){
+    state.value = clamp(Math.round(v / (opts.snap || 1e-9)) * (opts.snap || 1e-9), opts.min, opts.max);
+    if(!opts.snap) state.value = clamp(v, opts.min, opts.max);
+    show(src);
+    if(opts.onChange) opts.onChange(state.value, src);
+  }
+  if(input){
+    input.addEventListener('input', function(){ var n = parseNum(input.value); if(!isFinite(n)) return; state.value = clamp(n, opts.min, opts.max); show('input'); if(opts.onChange) opts.onChange(state.value, 'input'); });
+    input.addEventListener('blur', function(){ var n = parseNum(input.value); set(isFinite(n) ? n : state.value, 'blur'); });
+    input.addEventListener('keydown', function(ev){ if(ev.key === 'Enter'){ ev.preventDefault(); input.blur(); } });
+    input.addEventListener('keydown', function(ev){
+      if(ev.key === 'ArrowUp'){ ev.preventDefault(); set(state.value + opts.step, 'key'); }
+      if(ev.key === 'ArrowDown'){ ev.preventDefault(); set(state.value - opts.step, 'key'); }
+    });
+  }
+  /* Regler gleitet stufenlos, der Wert rastet auf die Schrittweite ein */
+  var raf = 0, pending = null;
+  function quant(v){ var q = opts.min + Math.round((v - opts.min) / opts.step) * opts.step; return parseFloat(q.toFixed(Math.max(dec, 6))); }
+  if(range){
+    range.step = 'any';
+    range.addEventListener('input', function(){
+      pending = parseFloat(range.value);
+      paintRange(range);
+      if(raf) return;
+      raf = requestAnimationFrame(function(){ raf = 0; var q = quant(pending); if(q !== state.value) set(q, 'range'); });
+    });
+    range.addEventListener('keydown', function(ev){
+      var d = (ev.key === 'ArrowRight' || ev.key === 'ArrowUp') ? 1 : (ev.key === 'ArrowLeft' || ev.key === 'ArrowDown') ? -1 : 0;
+      if(ev.key === 'PageUp') d = 10; if(ev.key === 'PageDown') d = -10;
+      if(ev.key === 'Home'){ ev.preventDefault(); set(opts.min, 'key'); return; }
+      if(ev.key === 'End'){ ev.preventDefault(); set(opts.max, 'key'); return; }
+      if(d){ ev.preventDefault(); set(state.value + d * opts.step, 'key'); }
+    });
+  }
+  /* gedrueckt halten = weiterzaehlen, wie auf dem iPhone */
+  function hold(btn, dir){
+    if(!btn) return;
+    var t1 = 0, t2 = 0;
+    function stop(){ clearTimeout(t1); clearInterval(t2); }
+    btn.addEventListener('pointerdown', function(ev){
+      ev.preventDefault(); set(state.value + dir * opts.step, 'btn');
+      t1 = setTimeout(function(){ t2 = setInterval(function(){ set(state.value + dir * opts.step, 'btn'); }, 70); }, 380);
+    });
+    ['pointerup','pointerleave','pointercancel'].forEach(function(e){ btn.addEventListener(e, stop); });
+    /* Tastatur (Enter/Leertaste) loest click ohne pointerdown aus */
+    btn.addEventListener('click', function(ev){ if(ev.detail === 0) set(state.value + dir * opts.step, 'btn'); });
+  }
+  hold(plus, 1); hold(minus, -1);
+  show('init');
+  return { get: function(){ return state.value; }, set: function(v){ set(v, 'api'); } };
+}
+
+/* ---- Chart nach Vorbild der iS2-Rechner (Chart.js) ----
+   opt.series: [{label, color, dash, fill:'full'|'top'|false, tip:true|false, tipFirst:bool, tipLabel}]
+   Wertboxen und Fuehrungspunkte werden aus den animierten Elementpositionen
+   gezeichnet, deshalb gleiten sie mit den Linien mit. */
+var SolLabels = {
+  id: 'solLabels',
+  afterDatasetsDraw: function(chart){
+    var o = chart.$sol; if(!o || !o.on) return;
+    var ctx = chart.ctx, area = chart.chartArea, idx = o.index;
+    if(o.zone && (o.zone.to === undefined || o.zone.to > o.zone.from)){
+      var zx = chart.scales.x.getPixelForValue(o.zone.from);
+      var zr = o.zone.to === undefined ? area.right : chart.scales.x.getPixelForValue(o.zone.to);
+      ctx.save(); ctx.fillStyle = o.zone.fill || 'rgba(40,60,85,0.045)'; ctx.fillRect(zx, area.top - 30, zr - zx, area.bottom - area.top + 30);
+      ctx.fillStyle = o.zone.color || '#5F6B7A'; ctx.font = '600 13px Inter, system-ui, sans-serif'; ctx.textBaseline = 'top';
+      var zl = o.zone.label; if(ctx.measureText(zl).width > zr - zx - 20 && o.zone.short) zl = o.zone.short; if(ctx.measureText(zl).width <= zr - zx - 16) ctx.fillText(zl, zx + 12, area.top - 22); ctx.restore();
+    }
+    var boxes = [];
+    chart.data.datasets.forEach(function(ds, k){
+      var s = o.series[k]; if(!s || s.tip === false) return;
+      var meta = chart.getDatasetMeta(k); if(meta.hidden) return;
+      var at = s.tipFirst ? 0 : idx;
+      var pt = meta.data[at]; if(!pt) return;
+      var raw = ds.data[at]; if(raw === null || raw === undefined) return;
+      var val = s.tipValue ? s.tipValue(raw, at) : raw;
+      boxes.push({k:k, x:pt.x, y:pt.y, color:s.color, title:s.tipLabel || s.label, text:(o.fmt || fmtNum)(val), raw:raw});
+    });
+    if(!boxes.length) return;
+    ctx.save();
+    /* Fuehrungslinie am gewaehlten Punkt */
+    var gx = boxes.filter(function(b){ return !o.series[b.k].tipFirst; })[0];
+    if(gx){ ctx.strokeStyle = 'rgba(40,60,85,0.18)'; ctx.setLineDash([3,4]); ctx.lineWidth = 1; ctx.beginPath(); ctx.moveTo(gx.x, area.top); ctx.lineTo(gx.x, area.bottom); ctx.stroke(); ctx.setLineDash([]); }
+    var small = chart.width < 520;
+    var fT = small ? 11 : 12.5, fV = small ? 15 : 19, padX = small ? 9 : 12, h = small ? 44 : 54, gap = 14;
+    boxes.forEach(function(b){
+      ctx.font = '400 ' + fT + 'px Inter, system-ui, sans-serif'; var w1 = ctx.measureText(b.title).width;
+      ctx.font = '700 ' + fV + 'px Inter, system-ui, sans-serif'; var w2 = ctx.measureText(b.text).width;
+      b.w = Math.max(w1, w2) + padX * 2; b.h = h;
+    });
+    /* oberste Linie bekommt die Box oberhalb, alle anderen unterhalb; dann entzerren */
+    var sorted = boxes.slice().sort(function(a, c){ return a.y - c.y; });
+    sorted.forEach(function(b, i){
+      var up = (i === 0 && b.y - gap - b.h > area.top - 6) || (b.y + gap + b.h > area.bottom + 30);
+      if(o.series[b.k].place) up = o.series[b.k].place === 'above';
+      b.up = up; b.top = up ? b.y - gap - b.h : b.y + gap;
+    });
+    for(var it = 0; it < 4; it++){
+      for(var i = 0; i < sorted.length; i++) for(var j = i + 1; j < sorted.length; j++){
+        var a = sorted[i], c = sorted[j];
+        var ax = clamp(a.x - a.w / 2, area.left + 2, chart.width - a.w - 4), cx = clamp(c.x - c.w / 2, area.left + 2, chart.width - c.w - 4);
+        var overlapX = ax < cx + c.w + 6 && cx < ax + a.w + 6;
+        var overlapY = a.top < c.top + c.h + 14 && c.top < a.top + a.h + 14;
+        if(overlapX && overlapY){ if(a.top <= c.top) c.top = a.top + a.h + 14; else a.top = c.top + c.h + 14; }
+      }
+    }
+    boxes.forEach(function(b){
+      var bx = clamp(b.x - b.w / 2, area.left + 2, chart.width - b.w - 4), by = b.top;
+      /* Punkt */
+      ctx.beginPath(); ctx.arc(b.x, b.y, small ? 4.5 : 6, 0, Math.PI * 2); ctx.fillStyle = '#fff'; ctx.fill();
+      ctx.lineWidth = 3; ctx.strokeStyle = b.color; ctx.stroke();
+      /* Box mit Zeiger */
+      ctx.shadowColor = 'rgba(0,0,0,0.18)'; ctx.shadowBlur = 14; ctx.shadowOffsetY = 4;
+      ctx.fillStyle = b.color; ctx.beginPath();
+      if(ctx.roundRect) ctx.roundRect(bx, by, b.w, b.h, 9); else ctx.rect(bx, by, b.w, b.h);
+      ctx.fill(); ctx.shadowColor = 'transparent';
+      var px = clamp(b.x, bx + 12, bx + b.w - 12);
+      ctx.beginPath();
+      if(b.up){ ctx.moveTo(px - 7, by + b.h - 1); ctx.lineTo(px + 7, by + b.h - 1); ctx.lineTo(px, by + b.h + 7); }
+      else { ctx.moveTo(px - 7, by + 1); ctx.lineTo(px + 7, by + 1); ctx.lineTo(px, by - 7); }
+      ctx.fill();
+      ctx.fillStyle = 'rgba(255,255,255,0.92)'; ctx.font = '400 ' + fT + 'px Inter, system-ui, sans-serif'; ctx.textBaseline = 'top';
+      ctx.fillText(b.title, bx + padX, by + (small ? 7 : 9));
+      ctx.fillStyle = '#fff'; ctx.font = '700 ' + fV + 'px Inter, system-ui, sans-serif';
+      ctx.fillText(b.text, bx + padX, by + (small ? 21 : 26));
+    });
+    ctx.restore();
+  }
+};
+
+function SolChart(id, opt){
+  var cv = document.getElementById(id);
+  var self = {opt: opt, index: 0};
+  var legend = document.getElementById(id + '_legend');
+  if(legend) legend.innerHTML = opt.series.filter(function(s){ return !s.noLegend; }).map(function(s){
+    return '<span><i class="' + (s.dash ? 'dash' : '') + '" style="background:' + s.color + ';color:' + s.color + ';"></i>' + s.label + '</span>'; }).join('') +
+    opt.series.filter(function(s){ return s.band && s.band.label; }).map(function(s){
+    return '<span><i class="band" style="background:' + (s.band.swatch || s.band.above) + ';"></i>' + s.band.label + '</span>' +
+      (s.band.label2 ? '<span><i class="band" style="background:' + s.band.swatch2 + ';box-shadow:inset 0 0 0 1px rgba(46,125,91,.35);"></i>' + s.band.label2 + '</span>' : ''); }).join('');
+  function grad(s){
+    return function(c){
+      var a = c.chart.chartArea; if(!a) return 'transparent';
+      var g = c.chart.ctx.createLinearGradient(0, a.bottom, 0, a.top);
+      if(s.fill === 'top'){ g.addColorStop(0, hexA(s.color, 0)); g.addColorStop(0.5, hexA(s.color, 0)); g.addColorStop(1, hexA(s.color, 0.24)); }
+      else { g.addColorStop(0, hexA(s.color, 0)); g.addColorStop(0.5, hexA(s.color, 0.2)); g.addColorStop(1, hexA(s.color, 0.24)); }
+      return g;
+    };
+  }
+  var small = function(){ return cv.parentNode.clientWidth < 520; };
+  self.chart = new Chart(cv.getContext('2d'), {
+    type: 'line',
+    data: {labels: [], datasets: opt.series.map(function(s){
+      return {label: s.label, data: [], borderColor: s.color, borderWidth: s.width || 4, borderDash: s.dash ? [10, 6] : [],
+              tension: s.step ? 0 : 0.3, stepped: s.step || false, pointRadius: 0, pointHoverRadius: 0, pointHitRadius: 0,
+              fill: s.band ? {target: s.band.to, above: s.band.above, below: s.band.below || s.band.above} : (s.fill ? 'origin' : false),
+              backgroundColor: s.fill ? grad(s) : 'transparent', clip: {left: 0, right: 0, top: 6, bottom: 0}, order: s.order || 0};
+    })},
+    plugins: [SolLabels],
+    options: {
+      responsive: true, maintainAspectRatio: false,
+      animation: {duration: 850, easing: 'easeOutQuart',
+        delay: function(c){ if(c.type !== 'data' || c.mode !== 'default' || self.started) return 0; return c.dataIndex * Math.min(26, 900 / Math.max(1, c.chart.data.labels.length)); },
+        onComplete: function(){ self.started = true; }},
+      animations: {x: {duration: 750, easing: 'easeOutCubic'}, y: {duration: 850, easing: 'easeOutQuart'}},
+      transitions: {active: {animation: {duration: 0}}},
+      interaction: {mode: 'index', intersect: false},
+      layout: {padding: {left: 2, right: small() ? 14 : 34, top: small() ? 60 : 74, bottom: small() ? 58 : 66}},
+      events: [],
+      plugins: {legend: {display: false}, tooltip: {enabled: false}},
+      scales: {
+        x: {display: false, grid: {display: false}},
+        y: {min: 0, grid: {color: 'rgba(0,0,0,0.08)', drawTicks: false}, border: {display: false},
+            ticks: {color: '#87919E', padding: 10, maxTicksLimit: 6, font: {family: 'Inter, system-ui, sans-serif', size: 11},
+                    callback: function(v){ return fmtNum(v); }}}
+      }
+    }
+  });
+  /* Optionen am Chart-Objekt, nicht in options: Chart.js wuerde Funktionen sonst als Scriptable aufrufen */
+  self.chart.$sol = {on: true, index: 0, series: opt.series, fmt: opt.fmt, zone: opt.zone};
+  /* Ziehen direkt im Diagramm waehlt den Zeitpunkt */
+  if(opt.onScrub){
+    var dragging = false, dragN = 0;
+    function pick(ev){
+      var r = cv.getBoundingClientRect(), x = ev.clientX - r.left;
+      var a = self.chart.chartArea, n = dragN; if(n < 2) return;
+      var i = Math.round(clamp((x - a.left) / (a.right - a.left), 0, 1) * (n - 1));
+      opt.onScrub(i);
+    }
+    cv.parentNode.addEventListener('pointerdown', function(ev){ dragging = true; dragN = self.chart.data.labels.length; pick(ev); });
+    window.addEventListener('pointermove', function(ev){ if(dragging) pick(ev); });
+    window.addEventListener('pointerup', function(){ dragging = false; });
+  }
+  self.set = function(labels, data, index, yMax, zone){
+    var ch = self.chart;
+    if(zone !== undefined) ch.$sol.zone = zone;
+    ch.data.labels = labels;
+    data.forEach(function(arr, k){ ch.data.datasets[k].data = arr; });
+    ch.$sol.index = index;
+    if(yMax !== undefined && yMax !== null && yMax > 0){
+      var raw = yMax / 5, mag = Math.pow(10, Math.floor(Math.log10(raw))), st = mag;
+      [1, 2, 2.5, 5, 10].some(function(f){ st = f * mag; return st >= raw; });
+      ch.options.scales.y.max = Math.ceil(yMax / st - 1e-9) * st; ch.options.scales.y.ticks.stepSize = st;
+    } else { delete ch.options.scales.y.max; delete ch.options.scales.y.ticks.stepSize; }
+    ch.options.layout.padding.right = small() ? 14 : 34; ch.options.layout.padding.top = small() ? 60 : 74; ch.options.layout.padding.bottom = small() ? 58 : 66;
+    ch.update();
+  };
+  return self;
+}
+/* Sichtbarer Zeitraum: wie in der Referenz laeuft das Diagramm ueber den gewaehlten
+   Zeitpunkt hinaus weiter, damit man sieht, wohin die Linien laufen */
+function winLen(k){ return k + 24; }
+/* Einheit der Zeitachse wie im Original umschaltbar: Jahr (2046) oder Dauer (20 J.) */
+var TMODE = {};
+function tfmt(cid, v){ return TMODE[cid] === 'dauer' ? (v === 0 ? 'heute' : v + ' J.') : String(new Date().getFullYear() + v); }
+function bindUnit(cid, onChange){ var s = document.getElementById(cid + '_unit'); if(!s) return; s.addEventListener('change', function(){ TMODE[cid] = s.value; onChange(); }); }
+/* Achsenmaximum wie in der Referenz: 1.35 x hoechster Wert fuenf Punkte nach dem gewaehlten */
+function yMaxAt(data, index, factor){
+  /* wie im Original: der gewaehlte Punkt liegt etwa auf halber Hoehe, die Achse waechst mit */
+  var m = 0;
+  data.forEach(function(arr){ if(arr && arr.length) m = Math.max(m, Math.abs(arr[Math.min(index, arr.length - 1)] || 0)); });
+  m *= factor || 1.9;
+  var mag = Math.pow(10, Math.floor(Math.log10(Math.max(m, 1)))), st = mag / 2;
+  return Math.ceil(m / st) * st;
+}
+
+/* Zeitleiste unter dem Chart */
+function buildScrub(id, count, value, onChange, fmtPill){
+  var track = document.getElementById(id + '_track');
+  if(!track) return null;
+  function tickHtml(c){ var h = '', t = c > 46 ? Math.ceil(c / Math.ceil(c / 46)) : c; for(var i = 0; i < t; i++) h += '<i></i>'; return h; }
+  track.innerHTML = '<div class="scrub-ticks">' + tickHtml(count) + '</div><div class="scrub-pill" id="' + id + '_pill"></div>' +
+    '<input type="range" id="' + id + '_range" min="0" max="' + (count - 1) + '" step="any" value="' + value + '" aria-label="Zeitpunkt wählen">';
+  var range = document.getElementById(id + '_range'), pill = document.getElementById(id + '_pill');
+  var raf = 0, user = false, cur = value, drag = false;
+  /* Pill folgt dem Finger stufenlos, der Wert springt nur auf ganze Schritte */
+  function place(raw){
+    var mx = parseFloat(range.max), p = mx <= 0 ? 0 : clamp(raw, 0, mx) / mx;
+    pill.style.left = 'calc(' + (p * 100) + '% + ' + (6 - 12 * p) + 'px)';
+    var maxL = document.getElementById(id + '_maxlbl'), minL = document.getElementById(id + '_minlbl');
+    var pr = pill.getBoundingClientRect();
+    if(maxL){ var mr = maxL.getBoundingClientRect(); maxL.style.opacity = (pr.right > mr.left - 6) ? '0' : '1'; }
+    if(minL){ var nr = minL.getBoundingClientRect(); minL.style.opacity = (pr.left < nr.right + 6) ? '0' : '1'; }
+  }
+  function paint(force){
+    var raw = parseFloat(range.value), v = Math.round(raw);
+    place(drag ? raw : v);
+    pill.textContent = fmtPill ? fmtPill(v) : v;
+    range.setAttribute('aria-valuetext', pill.textContent);
+    if(force || v !== cur){ cur = v; onChange(v, user); }
+  }
+  range.addEventListener('input', function(){ if(raf) return; raf = requestAnimationFrame(function(){ raf = 0; user = true; paint(); user = false; }); });
+  range.addEventListener('keydown', function(ev){
+    var d = (ev.key === 'ArrowRight' || ev.key === 'ArrowUp') ? 1 : (ev.key === 'ArrowLeft' || ev.key === 'ArrowDown') ? -1 : 0;
+    if(d){ ev.preventDefault(); range.value = clamp(cur + d, 0, parseFloat(range.max)); user = true; paint(); user = false; }
+  });
+  range.addEventListener('pointerdown', function(){ drag = true; track.classList.add('drag'); });
+  function up(){ if(!drag) return; drag = false; track.classList.remove('drag'); range.value = cur; place(cur); if(api.onEnd) api.onEnd(); }
+  window.addEventListener('pointerup', up); window.addEventListener('pointercancel', up);
+  range.addEventListener('change', up);
+  var api = {dragging: function(){ return drag; }, onEnd: null, get: function(){ return cur; },
+          set: function(v){ range.value = v; if(!drag) place(v); paint(); },
+          setMax: function(m, v){ range.max = m; track.querySelector('.scrub-ticks').innerHTML = tickHtml(m + 1);
+                                  range.value = (v === undefined) ? Math.min(cur, m) : v; if(!drag) place(parseFloat(range.value)); paint(true); }};
+  paint(true);
+  return api;
+}
+/* Zeitleiste und Diagramm teilen denselben Zeitraum; waehrend des Ziehens bleibt er stehen */
+function syncTime(sc, k, n, maxId, Y0, lockFn){
+  lockFn(true);
+  if(!sc.dragging()){ sc.setMax(n, k); var ml = document.getElementById(maxId); if(ml) ml.textContent = tfmt(maxId.replace('_maxlbl', ''), n); }
+  else if(sc.get() !== k) sc.set(k);
+  lockFn(false);
+}
+
+/* Funnel: Schritte, Antworten, Netlify-Versand mit Rechnerkontext */
+function Funnel(cfg){
+  var answers = {}, stepIds = cfg.steps;
+  function show(i){
+    stepIds.forEach(function(sid, k){ var el = document.getElementById(sid); if(el) el.classList.toggle('active', k === i); });
+    var prog = document.getElementById(cfg.progressId);
+    if(prog) Array.prototype.forEach.call(prog.children, function(bar, k){ bar.classList.toggle('done', k <= i); });
+    window.dataLayer.push({event:'lead_step', form_location:'rechner', topic:cfg.name, step:i+1});
+  }
+  function answer(key, value, nextIdx, btn){
+    answers[key] = value;
+    if(btn){ Array.prototype.forEach.call(btn.parentNode.querySelectorAll('.fopt'), function(s){ s.classList.remove('selected'); }); btn.classList.add('selected'); }
+    if(cfg.onAnswer) cfg.onAnswer(key, value, answers);
+    setTimeout(function(){ show(nextIdx); }, 220);
+  }
+  function submit(extraFields){
+    var data = new URLSearchParams();
+    data.append('form-name', cfg.formName); data.append('tool', cfg.name);
+    Object.keys(answers).forEach(function(k){ data.append(k, answers[k]); });
+    var ctx = cfg.context ? cfg.context() : {};
+    Object.keys(ctx).forEach(function(k){ data.append(k, ctx[k]); });
+    (extraFields || []).forEach(function(f){ var el = document.getElementById(f); if(el) data.append(el.name || f, el.type === 'checkbox' ? (el.checked ? 'ja' : 'nein') : el.value); });
+    var p = new URLSearchParams(window.location.search);
+    ['utm_source','utm_medium','utm_campaign','utm_content','utm_term','gclid'].forEach(function(k){ data.append(k, p.get(k) || ''); });
+    data.append('page_url', window.location.href);
+    return fetch('/formular-gesendet/', {method:'POST', headers:{'Content-Type':'application/x-www-form-urlencoded'}, body:data.toString()});
+  }
+  return {show: show, answer: answer, submit: submit, answers: answers, name: cfg.name};
+}
+
+document.addEventListener('click', function(ev){ var b = ev.target.closest && ev.target.closest('#detailBtn'); if(!b) return; setTimeout(function(){ var bl = document.getElementById('detailBlock'); if(bl) b.setAttribute('aria-expanded', bl.classList.contains('open') ? 'true' : 'false'); }, 0); });
+
+/* Standard-Abschluss eines Funnels: Pflichtfelder pruefen (mit Meldung), senden, danken */
+function telOk(x){ x = (x || '').trim(); var d = x.replace(/\D/g, ''); return /^[+0-9 ()\/.\-]+$/.test(x) && d.length >= 9 && d.length <= 15; }
+function mailOk(x){ return /^[^\s@]+@[^\s@]+\.[a-z]{2,}$/i.test((x || '').trim()); }
+function fieldErr(el, msg){
+  var id = el.id + '_err', p = document.getElementById(id);
+  if(!msg){ if(p) p.remove(); el.removeAttribute('aria-invalid'); return; }
+  if(!p){ p = document.createElement('p'); p.className = 'f-err'; p.id = id; p.setAttribute('role', 'alert'); if(el.type === 'checkbox') el.parentNode.insertAdjacentElement('afterend', p); else el.parentNode.appendChild(p); }
+  p.textContent = msg; el.setAttribute('aria-invalid', 'true'); el.setAttribute('aria-describedby', id);
+}
+function contactChecks(){
+  var v = document.getElementById('f_vorname'), nn = document.getElementById('f_nachname'),
+      tel = document.getElementById('f_telefon'), em = document.getElementById('f_email'), kt = document.getElementById('f_kontakt'),
+      pz = document.getElementById('f_plz'), c = document.getElementById('f_consent');
+  var list = [[v, !v.value.trim(), 'Bitte geben Sie Ihren Vornamen an.']];
+  if(tel) list.push([tel, !telOk(tel.value), 'Bitte geben Sie eine gültige Telefonnummer an, zum Beispiel 079 123 45 67.']);
+  if(em) list.push([em, em.getAttribute('data-optional') ? (em.value.trim() !== '' && !mailOk(em.value)) : !mailOk(em.value), 'Bitte geben Sie eine gültige E-Mail-Adresse an.']);
+  if(kt) list.push([kt, !(telOk(kt.value) || mailOk(kt.value)), 'Bitte geben Sie eine gültige Telefonnummer oder E-Mail-Adresse an.']);
+  list.push([pz, !/^\d{4}$/.test(pz.value.trim()), 'Bitte geben Sie eine vierstellige PLZ an.']);
+  list.push([c, !c.checked, 'Bitte bestätigen Sie die Einwilligung, damit wir Sie kontaktieren dürfen.']);
+  var first = null;
+  list.forEach(function(b){ fieldErr(b[0], b[1] ? b[2] : ''); if(b[1] && !first) first = b[0]; });
+  if(first) first.focus();
+  return !first;
+}
+function sendErr(btn){
+  var p = btn.parentNode.parentNode.querySelector('.f-err.send') || document.createElement('p');
+  p.className = 'f-err send'; p.setAttribute('role', 'alert');
+  p.innerHTML = 'Das Senden hat nicht geklappt. Bitte versuchen Sie es nochmals oder rufen Sie uns an: <a href="tel:+41415117606">+41 41 511 76 06</a>.';
+  btn.parentNode.parentNode.appendChild(p);
+}
+function bindFunnelSubmit(F, fields, doneText){
+  var btn = document.getElementById('fSubmit'); if(!btn) return;
+  var label = btn.textContent;
+  btn.addEventListener('click', function(){
+    if(!contactChecks()) return;
+    var v = document.getElementById('f_vorname');
+    btn.disabled = true; btn.textContent = 'Wird gesendet …';
+    function fail(){ btn.disabled = false; btn.textContent = label; sendErr(btn); }
+    F.submit(fields).then(function(r){
+      if(!r.ok){ fail(); return; }
+      window.dataLayer.push({event:'generate_lead', lead_source:(F.name || document.title), form_location:'rechner', topic:location.pathname, lead_brand:'SOLVENTA', currency:'CHF'});
+      try { history.replaceState(null, '', location.pathname + '?anfrage=danke'); } catch(e){}
+      var mb = document.querySelector('.mres'); if(mb) mb.remove();
+      document.getElementById('funnelForm').style.display = 'none';
+      document.getElementById('funnelDone').classList.add('show');
+      document.getElementById('fDoneTitle').textContent = 'Vielen Dank, ' + v.value.trim() + '.';
+      document.getElementById('fDoneText').textContent = typeof doneText === 'function' ? doneText() : doneText;
+    }).catch(fail);
+  });
+}
+
+document.addEventListener('click', function(ev){ var m = document.querySelector('.tools-menu'); if(m && m.open && !m.contains(ev.target)) m.open = false; });
+
+var Y0 = new Date().getFullYear();
+var P = 12, PER = {12:'pro Monat', 4:'pro Quartal', 2:'pro Halbjahr', 1:'pro Jahr'};
+function af(r, m){ var i = Math.pow(1 + r, 1/P) - 1; if(m <= 0) return 0; if(Math.abs(i) < 1e-12) return P * m; return (Math.pow(1 + i, P * m) - 1) / i * (1 + i); }
+function fv(K0, R, r, t){ return t <= 0 ? K0 : K0 * Math.pow(1 + r, t) + R * af(r, t); }
+var S = {}, chart, scrub, wscrub, M = {}, lock = false;
+function yrs(v){ return v + (v === 1 ? ' Jahr' : ' Jahre'); }
+function compute(){
+  var K0 = S.start.get(), R = S.rate.get(), r = S.rendite.get() / 100, n = S.dauer.get(), w = Math.min(S.warten.get(), n - 1);
+  var lab = [], now = [], late = [];
+  for(var t = 0, WL = winLen(n); t <= WL; t++){ lab.push(Y0 + t); now.push(fv(K0, R, r, t)); late.push(t <= w ? K0 : fv(K0, R, r, t - w)); }
+  M = {K0:K0, R:R, r:r, n:n, w:w, lab:lab, now:now, late:late};
+}
+function update(){
+  if(lock) return;
+  compute();
+  if(S.warten.get() !== M.w){ lock = true; S.warten.set(M.w); lock = false; }
+  lock = true; if(!wscrub.dragging()){ wscrub.setMax(M.lab.length - 1, M.w); document.getElementById('sowWait_maxlbl').textContent = tfmt('sowChart', M.lab.length - 1); } else if(wscrub.get() !== M.w) wscrub.set(M.w); lock = false;
+  var k = M.n; syncTime(scrub, k, M.lab.length - 1, 'sowChart_maxlbl', Y0, function(v){ lock = v; });
+  var a = M.now[k], b = M.late[k], m = k - M.w;
+  chart.set(M.lab, [M.now, M.late], k, yMaxAt([M.now, M.late], k), {from:0, to:M.w, label:'Wartezeit', color:'#5F6B7A', fill:'rgba(40,60,85,0.05)'});
+  tweenText('tNow', a, chf); tweenText('tLate', b, chf); tweenText('tCost', a - b, function(v){ return v >= 0.5 ? '− ' + chf(v) : chf(0); });
+  var einNow = M.K0 + M.R * P * k, einLate = M.K0 + M.R * P * Math.max(0, m);
+  document.getElementById('tNowX').innerHTML = 'davon Ertrag <b class="c-s3">' + chf(a - einNow) + '</b>';
+  document.getElementById('tLateX').innerHTML = 'davon Ertrag <b class="c-s2">' + chf(b - einLate) + '</b>';
+  document.getElementById('tNowSub').textContent = 'Start ' + Y0 + ', Stand ' + (Y0 + k);
+  document.getElementById('tLateSub').textContent = M.w === 0 ? 'ohne Wartezeit' : (k < M.w ? 'Start erst ' + (Y0 + M.w) + ', noch nicht begonnen' : 'Start ' + (Y0 + M.w) + ', Stand ' + (Y0 + k));
+  var catchR = (m > 0 && M.w > 0) ? (a - M.K0 * Math.pow(1 + M.r, m)) / af(M.r, m) : NaN;
+  if(isFinite(catchR)){
+    tweenText('tCatch', catchR, function(v){ return chf(v); });
+    document.getElementById('tCatchX').innerHTML = 'statt <b>' + chf(M.R) + '</b> ' + PER[P];
+    document.getElementById('tCatchSub').textContent = 'ab ' + (Y0 + M.w) + ', damit es ' + (Y0 + k) + ' gleich viel ist';
+  } else {
+    document.getElementById('tCatch').textContent = '–'; document.getElementById('tCatch').__v = undefined;
+    document.getElementById('tCatchX').textContent = '';
+    document.getElementById('tCatchSub').textContent = M.w === 0 ? 'ohne Wartezeit ist kein Aufholen nötig' : 'Zeitpunkt nach dem Start wählen';
+  }
+  var share = a > 0 ? (a - b) / a * 100 : 0;
+  document.getElementById('hookText').innerHTML = M.w === 0 ? 'Sie starten sofort, das Warten kostet Sie nichts. Ziehen Sie den Startpunkt über der Kurve nach rechts.' :
+    (k <= M.w ? 'Wählen Sie unten ein Jahr nach dem Start.' :
+    'Wer <b>' + yrs(M.w) + '</b> wartet, hat im Jahr <b>' + (Y0 + k) + '</b> ' + (share >= 0.5 ? 'rund <b>' + fmtNum(share, 0) + ' %</b> weniger Kapital. ' : 'gleich viel Kapital. ') +
+    (isFinite(catchR) && catchR > M.R ? 'Aufholen hiesse: <b>' + chf(catchR) + '</b> statt ' + chf(M.R) + ' ' + PER[P] + ' sparen.' : ''));
+  document.getElementById('rwBox').innerHTML = '<p class="rw-h">Ihre Zahlen im Jahr ' + (Y0 + k) + '</p>' +
+    rwl('Sofort starten', chf(M.K0) + ' und ' + chf(M.R) + ' ' + PER[P] + ' über ' + yrs(k), chf(a)) +
+    rwl('Nach ' + M.w + (M.w === 1 ? ' Jahr' : ' Jahren') + ' starten', 'gleiche Rechnung über ' + yrs(Math.max(0, m)), chf(b)) +
+    '<div class="rw-line rw-total"><span class="rw-formel"><b>Kosten des Wartens</b></span><span class="rw-res">' + chf(a - b) + '</span></div>';
+}
+function rwl(l, f, r){ return '<div class="rw-line"><span class="rw-formel"><b>' + l + '</b><br>' + f + '</span><span class="rw-res">' + r + '</span></div>'; }
+
+S.start = bindStepper('start', {value:10000, min:0, max:500000, step:1000, fmt:chf, onChange:update});
+S.rate = bindStepper('rate', {value:300, min:0, max:5000, step:50, fmt:function(v){ return chf(v) + ' ' + PER[P]; }, onChange:update});
+var selInt = document.getElementById('intervall');
+selInt.addEventListener('change', function(){ P = parseInt(selInt.value, 10) || 12; S.rate.set(S.rate.get()); update(); });
+S.rendite = bindStepper('rendite', {value:4, min:0, max:8, step:0.25, dec:2, fmt:function(v){ return pct(v, 2); }, onChange:update});
+S.dauer = bindStepper('dauer', {value:30, min:2, max:45, step:1, fmt:function(v){ return yrs(v) + ', bis ' + (Y0 + v); }, onChange:update});
+S.warten = bindStepper('warten', {value:10, min:0, max:44, step:1, fmt:function(v){ return v === 0 ? 'sofort' : 'in ' + v + (v === 1 ? ' Jahr' : ' Jahren') + ', also ' + (Y0 + v); }, onChange:update});
+chart = SolChart('sowChart', {fmt:chf, series:[
+  {label:'Sofort starten', color:'#AF9B64', fill:false},
+  {label:'Später starten', color:'#C75050', fill:false, band:{to:0, above:'rgba(199,80,80,0.13)', below:'rgba(199,80,80,0.13)', label:'Kosten des Wartens'}}],
+  onScrub:function(i){ S.dauer.set(clamp(i, 2, 45)); }});
+scrub = buildScrub('sowChart', 46, 30, function(v, user){ if(user && !lock) S.dauer.set(clamp(v, 2, 45)); }, function(v){ return tfmt('sowChart', v); });
+wscrub = buildScrub('sowWait', 45, 10, function(v, user){ if(user && !lock) S.warten.set(v); },
+  function(v){ return v === 0 ? 'sofort' : (TMODE.sowChart === 'dauer' ? 'in ' + v + ' J.' : 'Start ' + (Y0 + v)); });
+scrub.onEnd = update; bindUnit('sowChart', update); wscrub.onEnd = update;
+document.getElementById('sowWait_range').setAttribute('aria-label', 'Startzeitpunkt wählen');
+update();
+
+window.F = Funnel({name:'rechner-starten-warten', formName:'rechner-starten-warten', progressId:'fprog', steps:['fstep0','fstep1','fstep2'],
+  context: function(){ var k = scrub.get(); return {startkapital:M.K0, sparrate:M.R, rendite:M.r*100, horizont:M.n, wartezeit:M.w, kosten_warten:Math.round(M.now[k]-M.late[k])}; },
+  onAnswer: function(k, v, a){ var el = document.getElementById('fSummary'); if(el) el.innerHTML = (function(){ var k = scrub.get(); return 'Ihre Berechnung: Warten kostet <b>' + chf(M.now[k] - M.late[k]) + '</b>' + (a.grund ? '<br>Bisher: <b>' + a.grund + '</b>' : ''); })(); }
+});
+bindFunnelSubmit(F, ['f_vorname','f_nachname','f_telefon','f_plz','f_consent'], function(){ return 'Ein unabhängiger Berater von SOLVENTA ruft Sie innert eines Werktags an. Ihre Berechnung liegt ihm vor, damit er sich auf das Gespräch vorbereiten kann.'; });
+
+
+(function(){
+  var h = document.querySelector('.hook'); var fun = document.getElementById('funnel'); if(!h || !fun) return;
+  var bar = document.createElement('div'); bar.className = 'mres'; bar.setAttribute('aria-hidden', 'true');
+  bar.innerHTML = '<div class="mres-t"><span class="mres-k"></span><b class="mres-n"></b></div><a class="btn btn-gold" href="#funnel" tabindex="-1">Besprechen</a>';
+  document.body.appendChild(bar); document.body.classList.add('has-mres');
+  var k = h.querySelector('.hook-k'), n = h.querySelector('.hook-num');
+  function sync(){ bar.querySelector('.mres-k').textContent = h.getAttribute('data-short') || k.textContent; bar.querySelector('.mres-n').textContent = n.textContent; }
+  new MutationObserver(sync).observe(h, {subtree:true, childList:true, characterData:true}); sync();
+  var vis = {hook:false, fun:false};
+  function upd(){ bar.classList.toggle('show', !vis.hook && !vis.fun); }
+  var io = new IntersectionObserver(function(es){ es.forEach(function(e){ vis[e.target === h ? 'hook' : 'fun'] = e.isIntersecting; }); upd(); });
+  io.observe(h); io.observe(fun); window.addEventListener('scroll', upd, {passive:true});
+})();
+
+</script>
+<div class="svck" id="svCk" role="dialog" aria-modal="false" aria-labelledby="svCkT">
+  <h2 id="svCkT">Cookies und Datenschutz</h2>
+  <p>Statistik und Werbemessung (zum Beispiel Google) nutzen wir nur mit Ihrer Einwilligung. Ändern können Sie Ihre Wahl jederzeit unter «Cookie-Einstellungen» am Seitenende. <a href="/datenschutz/">Datenschutz</a></p>
+  <div class="svck-opts">
+    <label class="svck-row"><input type="checkbox" checked disabled><span><b>Notwendig</b>Formulare, Sicherheit und Ihre Cookie-Wahl. Immer aktiv.</span></label>
+    <label class="svck-row"><input type="checkbox" id="svCkS"><span><b>Statistik</b>Anonyme Auswertung, welche Inhalte genutzt werden.</span></label>
+    <label class="svck-row"><input type="checkbox" id="svCkM"><span><b>Marketing</b>Messung, welche Anzeigen zu Anfragen führen (zum Beispiel Google Ads).</span></label>
+  </div>
+  <div class="svck-btns">
+    <button type="button" class="svck-no" id="svCkNo">Nur notwendige</button>
+    <button type="button" class="svck-ok" id="svCkOk">Alle akzeptieren</button>
+  </div>
+  <div class="svck-btns svck-save" style="margin-top:8px;"><button type="button" class="svck-no" id="svCkSave">Auswahl speichern</button></div>
+  <button type="button" class="svck-more" id="svCkMore">Auswahl anpassen</button>
+</div>
+<script>(function(){
+  var el = document.getElementById('svCk'); if(!el) return;
+  function get(){ try{ return JSON.parse(localStorage.getItem('sv_consent') || decodeURIComponent((document.cookie.match(/(?:^|; )sv_consent=([^;]*)/) || [])[1] || '') || 'null'); }catch(e){ return null; } }
+  function save(stat, mkt){
+    var c = {v:1, stat:!!stat, mkt:!!mkt, t:new Date().toISOString()};
+    try{ localStorage.setItem('sv_consent', JSON.stringify(c)); }catch(e){}
+    try{ if(/solventa\.ch$/.test(location.hostname)) document.cookie = 'sv_consent=' + encodeURIComponent(JSON.stringify(c)) + '; domain=.solventa.ch; path=/; max-age=31536000; SameSite=Lax; Secure'; }catch(e){}
+    if(window.gtag) gtag('consent', 'update', {analytics_storage: stat ? 'granted' : 'denied', ad_storage: mkt ? 'granted' : 'denied', ad_user_data: mkt ? 'granted' : 'denied', ad_personalization: mkt ? 'granted' : 'denied'});
+    window.dataLayer = window.dataLayer || []; dataLayer.push({event:'consent_update', consent_statistik:!!stat, consent_marketing:!!mkt});
+    el.classList.remove('show', 'open');
+  }
+  function open(full){
+    var c = get();
+    document.getElementById('svCkS').checked = !!(c && c.stat);
+    document.getElementById('svCkM').checked = !!(c && c.mkt);
+    el.classList.add('show'); if(full) el.classList.add('open');
+  }
+  document.getElementById('svCkOk').addEventListener('click', function(){ save(true, true); });
+  document.getElementById('svCkNo').addEventListener('click', function(){ save(false, false); });
+  document.getElementById('svCkSave').addEventListener('click', function(){ save(document.getElementById('svCkS').checked, document.getElementById('svCkM').checked); });
+  document.getElementById('svCkMore').addEventListener('click', function(){ el.classList.add('open'); });
+  Array.prototype.forEach.call(document.querySelectorAll('[data-consent-open]'), function(a){ a.addEventListener('click', function(e){ e.preventDefault(); open(true); }); });
+  window.svConsentOpen = function(){ open(true); };
+  if(!get()) open(false);
+})();</script>
+</body>
+</html>
